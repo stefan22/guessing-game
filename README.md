@@ -1,6 +1,6 @@
 # guessing-game
 
-- react | jest | tdd
+tech: react | jest | tdd
 
 
 <br/><br/>
