@@ -11,5 +11,5 @@ tech: react | jest | tdd
 
 ### Assets folder
 
-- created sketch wireframe
+º sketch wireframe created
 
