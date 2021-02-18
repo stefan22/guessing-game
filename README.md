@@ -1,4 +1,4 @@
-# guessing-game
+# Guessing game – [guessing-game]
 
 tech: react | jest | tdd
 
