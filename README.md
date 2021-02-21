@@ -11,7 +11,7 @@ Once user enters a guess word (at least 3 characters long), a table appears
 below the text input bar section showing the number of letters matching
 the computer's word or a message indicating that you have guessed it correctly.
 
-### tests
+### Tests
 
 Tests under **tests** folder
 
@@ -27,7 +27,6 @@ Tests under **tests** folder
 ### Mockups
 
 <br /><br />
-
 
 #### screenshots
 
