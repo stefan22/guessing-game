@@ -2,8 +2,8 @@
 
 <tdd - react -redux - html - css - sketch>
 
-### About
---------
+## About
+
 
 A simple game where a user tries to guess a random generated word
 by the computer.  
