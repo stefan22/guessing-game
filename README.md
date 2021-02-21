@@ -12,13 +12,13 @@ Once user enters a guess word (at least 3 characters long), a table appears
 below the text input bar section showing the number of letters matching
 the computer's word or a message indicating that you have guessed it correctly.
 
-### Tests
---------
+## Tests
+
 
 Tests under **tests** folder
 
-### Instructions
--------
+## Instructions
+
 
 1. To clone/download see green button above.
 2. Install dependencies
@@ -29,12 +29,12 @@ Tests under **tests** folder
 
 <br /><br />
 
-### Mockups
-------
+## Mockups
+
 
 <br />
 
-#### screenshots
+## screenshots
 
 <kbd>mckup1</kbd>
 <br />
