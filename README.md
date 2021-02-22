@@ -28,7 +28,7 @@ Tests found under `__tests__` folder
    • For tests: open a new tab `ctrl tab` and type `npm run test`  
    • See `Package.json scripts` for other useful commands
 
-<br /><br />
+<br />
 
 ## Mockups &nbsp; :triangular_ruler:
 
