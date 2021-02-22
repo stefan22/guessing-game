@@ -1,4 +1,4 @@
-# Guessing-game &nbsp; :name_badge:
+# Guessing-game &nbsp; :name_badge: :heavy_exclamation_mark:
 
 <tdd - react -redux - html - css - sketch>
 
@@ -20,7 +20,7 @@ Tests found under `__tests__` folder
 ## Instructions &nbsp; :pill:
 
 
-1. To clone/download see green button above.
+1. To clone/download see `green button` above.
 2. Install dependencies
 3. Terminal:  
    • To open in browser: `npm start`  
@@ -49,3 +49,12 @@ Tests found under `__tests__` folder
 
 <kbd>mckup3</kbd>
 <img src="screenshots/mck3.png">
+
+
+
+
+
+
+<br /><br />
+
+The end &nbsp; :100:
