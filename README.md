@@ -24,8 +24,8 @@ Tests found under `__tests__` folder
 1. To clone/download see `green button` above.
 2. Install dependencies
 3. Terminal:  
-   • To open in browser: `npm start`  
-   • For tests: open a new tab `ctrl tab` and type `npm run test`  
+   • Open in browser: `npm start`  
+   • Run tests: open a new tab `ctrl tab` and type `npm run test`  
    • See `Package.json scripts` for other useful commands
 
 <br />
