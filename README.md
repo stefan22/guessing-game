@@ -45,6 +45,7 @@ Tests found under `__tests__` folder
 <br /><br />
 
 <kbd>mckup3</kbd>
+<br />
 <img src="screenshots/mck3.png">
 
 <br /><br />
