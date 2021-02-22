@@ -1,6 +1,3 @@
-# Created by https://www.toptal.com/developers/gitignore/api/visualstudiocode,node,git,react,macos,linux,firebase,xcode,sublimetext
-# Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode,node,git,react,macos,linux,firebase,xcode,sublimetext
-
 ### Firebase ###
 .idea
 **/node_modules/*
