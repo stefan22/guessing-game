@@ -1,8 +1,8 @@
-# Guessing-game &nbsp; :question:
+# Guessing-game &nbsp; :name_badge:
 
 <tdd - react -redux - html - css - sketch>
 
-## About
+## About &nbsp; :bulb:
 
 
 A short game where a user tries to guess a random generated word
@@ -12,12 +12,12 @@ Once user enters a guess word (at least 3 characters long), a table appears
 below the text input bar section showing the number of letters matching
 the computer's word or a message indicating that you have guessed it correctly.
 
-## Tests
+## Tests  &nbps; :closed_book:
 
 
 Tests under **tests** folder
 
-## Instructions
+## Instructions &nbsp; :pill:
 
 
 1. To clone/download see green button above.
@@ -29,12 +29,12 @@ Tests under **tests** folder
 
 <br /><br />
 
-## Mockups
+## Mockups &nbsp; :triangular_ruler:
 
 
 <br />
 
-### screenshots
+### screenshots  &nbsp; :traffic_light:
 
 <kbd>mckup1</kbd>
 <br />
