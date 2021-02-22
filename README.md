@@ -1,11 +1,11 @@
-# guessing-game
+# Guessing-game &nbsp; :question:
 
 <tdd - react -redux - html - css - sketch>
 
 ## About
 
 
-A simple game where a user tries to guess a random generated word
+A short game where a user tries to guess a random generated word
 by the computer.  
 At load, it shows the game instructions and asks user to guess matching word.  
 Once user enters a guess word (at least 3 characters long), a table appears
