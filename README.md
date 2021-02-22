@@ -33,8 +33,6 @@ Tests found under `__tests__` folder
 ## Mockups &nbsp; :triangular_ruler:
 
 
-<br />
-
 ### screenshots 
 
 <kbd>mckup1</kbd>
