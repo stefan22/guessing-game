@@ -3,6 +3,7 @@
 :baggage_claim: Tech stack:  &nbsp; tdd - react -redux - html - css - sketch
 
 <br/>
+
 ## About
 
 A short game where a user tries to guess a random generated word
