@@ -1,6 +1,6 @@
 # Guessing-game &nbsp; :name_badge:
 
-<tdd - react -redux - html - css - sketch> &nbsp; :baggage_claim:
+:baggage_claim:  &nbsp; <tdd - react -redux - html - css - sketch>
 
 ## About
 
