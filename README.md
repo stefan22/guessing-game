@@ -2,8 +2,8 @@
 
 <tdd - react -redux - html - css - sketch>
 
-## About &nbsp; :bulb:
-
+## About
+:bulb: 
 
 A short game where a user tries to guess a random generated word
 by the computer.  
