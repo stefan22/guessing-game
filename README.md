@@ -15,7 +15,7 @@ the computer's word or a message indicating that you have guessed it correctly.
 ## Tests  &nbsp; :closed_book:
 
 
-Tests under **tests** folder
+Tests found under `__tests__` folder
 
 ## Instructions &nbsp; :pill:
 
