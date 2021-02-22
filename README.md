@@ -1,6 +1,6 @@
-# Guessing-game &nbsp; :name_badge: :heavy_exclamation_mark:
+# Guessing-game &nbsp; :name_badge:
 
-<tdd - react -redux - html - css - sketch>
+<tdd - react -redux - html - css - sketch> &nbsp; :baggage_claim:
 
 ## About
 
