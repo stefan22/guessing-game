@@ -32,6 +32,7 @@ Tests found under `__tests__` folder
 
 ### screenshots
 
+<br />
 <kbd>mckup1</kbd>
 <br />
 <img src="screenshots/mck1.png">
