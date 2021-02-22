@@ -1,6 +1,6 @@
 # Guessing-game &nbsp; :name_badge:
 
-:baggage_claim: Tech stack:  &nbsp; tdd - react -redux - html - css - sketch
+:baggage_claim: Tech stack: &nbsp; tdd - react -redux - html - css - sketch
 
 <br/>
 
@@ -13,13 +13,11 @@ Once user enters a guess word (at least 3 characters long), a table appears
 below the text input bar section showing the number of letters matching
 the computer's word or a message indicating that you have guessed it correctly.
 
-## Tests   &nbsp; :traffic_light:
-
+## Tests &nbsp; :traffic_light:
 
 Tests found under `__tests__` folder
 
 ## Instructions &nbsp; :pill:
-
 
 1. To clone/download see `green button` above.
 2. Install dependencies
@@ -32,8 +30,7 @@ Tests found under `__tests__` folder
 
 ## Mockups &nbsp; :triangular_ruler:
 
-
-### screenshots 
+### screenshots
 
 <kbd>mckup1</kbd>
 <br />
@@ -42,17 +39,13 @@ Tests found under `__tests__` folder
 <br /><br />
 
 <kbd>mckup2</kbd>
+<br />
 <img src="screenshots/mck2.png">
 
 <br /><br />
 
 <kbd>mckup3</kbd>
 <img src="screenshots/mck3.png">
-
-
-
-
-
 
 <br /><br />
 
