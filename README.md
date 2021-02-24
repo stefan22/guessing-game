@@ -28,7 +28,7 @@ Tests found under `__tests__` folder
 
 <br />
 
-## Mockups &nbsp; :triangular_ruler:
+## Wireframes &nbsp; :triangular_ruler:
 
 ### screenshots
 
