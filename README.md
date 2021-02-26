@@ -6,11 +6,11 @@
 
 ## About
 
-A short game where a user tries to guess a random generated word
+A short game where a user tries to guess a random generated five letter word
 by the computer.  
-At load, it shows the game instructions and asks user to guess matching word.  
-Once user enters a guess word (at least 3 characters long), a table appears
-below the text input bar section showing the number of letters matching
+At load, it shows the game instructions and asks user to guess word.  
+Once user submits a word (at least 3 characters long), a table appears
+below the text input box section showing the number of matching letters against
 the computer's word or a message indicating that you have guessed it correctly.
 
 ## Tests &nbsp; :traffic_light:
