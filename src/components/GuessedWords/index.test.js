@@ -4,9 +4,7 @@ import GuessedWords from './index'
 import { findDataTestAttr } from '../../../test/testUtils'
 
 const defaultProps = {
-  guessedWords: [
-    { guessedWord: 'train', letterMatchCount: 3 },
-  ],
+  guessedWords: [{ guessedWord: 'train', letterMatchCount: 3 }],
 }
 
 /**
@@ -15,6 +13,7 @@ const defaultProps = {
  * @param {} props
  * @returns {ShallowWrapper}
  */
+
 const setup = (props = {}) => {
   const setProps = { ...defaultProps, ...props }
   return shallow(<GuessedWords {...setProps} />)
@@ -28,7 +27,7 @@ test('does not throw a warning with expected props', () => {
 describe('if there are no words guessed', () => {
   let wrapper
   beforeEach(() => {
-    wrapper = setup({ guessWords: [] })
+    wrapper = setup({ guessedWords: [] })
   })
 
   test('renders without errors', () => {
@@ -36,23 +35,45 @@ describe('if there are no words guessed', () => {
     expect(comp.length).toBe(1)
   })
 
-  test('renders instructions to guess a word', () => {
-    const instructions = findDataTestAttr(
-      wrapper,
-      'guessed-instructions',
-    )
+  test('does render instructions to enter a word', () => {
+    const instructions = findDataTestAttr(wrapper, 'guessed-instructions')
     expect(instructions.text().length).toBeGreaterThan(5)
   })
 
-  test('renders instructions after a word entered', () => {
-    const instructions = findDataTestAttr(
-      wrapper,
-      'guessed-instructions',
-    )
-    expect(instructions.text().length).toBeGreaterThan(5)
+  test('render instruction to "Try to guess the secret word"', () => {
+    const instructions = findDataTestAttr(wrapper, 'guessed-instructions')
+    expect(instructions.text()).toEqual('Try to guess the secret word!')
   })
-
-  test('does show instructions to enter a word', () => {})
 })
 
-describe('if there are words guessed', () => {})
+describe('if there are words guessed', () => {
+  let wrapper, guessedWords
+  guessedWords = [
+    { guessWord: 'jockey', letterMatchCount: 2 },
+    { guessWord: 'saint', letterMatchCount: 1 },
+    { guessWord: 'party', letterMatchCount: 5 },
+  ]
+  beforeEach(() => {
+    wrapper = setup({ guessedWords })
+  })
+
+  test('renders without errors', () => {
+    const component = findDataTestAttr(wrapper, 'guessed-words')
+    expect(component.length).toBe(1)
+  })
+
+  test('renders guessed words section markup', () => {
+    const guessedSection = findDataTestAttr(wrapper, 'guessed-section')
+    expect(guessedSection.length).toBe(1)
+  })
+
+  test("renders new instructions after a word's entered", () => {
+    const instructions = findDataTestAttr(wrapper, 'guessed-instructions')
+    expect(instructions.text()).toEqual("Nice ...you're on your way!")
+  })
+
+  test('renders number of correct guessed words', () => {
+    const guessedCorrect = findDataTestAttr(wrapper, 'guessed-word')
+    expect(guessedCorrect.length).toBe(guessedWords.length)
+  })
+})
