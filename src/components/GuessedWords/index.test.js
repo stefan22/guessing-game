@@ -5,8 +5,8 @@ import { findDataTestAttr } from '../../../test/testUtils'
 
 const defaultProps = {
   guessedWords: [
-    { guessedWord: 'train', letterMatchCount: 3 }
-  ]
+    { guessedWord: 'train', letterMatchCount: 3 },
+  ],
 }
 
 /**
@@ -39,7 +39,15 @@ describe('if there are no words guessed', () => {
   test('renders instructions to guess a word', () => {
     const instructions = findDataTestAttr(
       wrapper,
-      'guessed-instructions'
+      'guessed-instructions',
+    )
+    expect(instructions.text().length).toBeGreaterThan(5)
+  })
+
+  test('renders instructions after a word entered', () => {
+    const instructions = findDataTestAttr(
+      wrapper,
+      'guessed-instructions',
     )
     expect(instructions.text().length).toBeGreaterThan(5)
   })

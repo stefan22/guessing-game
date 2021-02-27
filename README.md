@@ -1,4 +1,4 @@
-# Guessing-game &nbsp; \:name_badge\:
+# Guessing-game &nbsp; :name_badge:
 
 :baggage_claim: Tech stack: &nbsp; tdd - react -redux - html - css - sketch
 
