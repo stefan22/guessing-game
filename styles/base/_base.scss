@@ -1,0 +1,31 @@
+input,
+textarea,
+fieldset {
+  border: none;
+}
+a,
+input {
+  outline: none;
+  text-decoration: none;
+}
+
+img,
+figure {
+  max-width: 100%;
+  display: block;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+input[type='button'],
+input[type='submit'],
+button {
+  font: inherit;
+  transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  -webkit-transition: 0.2s ease-in-out;
+  cursor: pointer;
+}

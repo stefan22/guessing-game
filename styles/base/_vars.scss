@@ -1,0 +1,149 @@
+/**
+@  vars.scss
+¶  imported into each stylesheet
+¶  =============================
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:wght@400;600;&display=swap');
+
+/**
+@ colors
+*  –––––– */
+
+$pri: #f44336;
+$pribg: #f8f8ff;
+$sec: #062886;
+
+// light
+$white: #fffafa;
+$snow: #fffafa;
+$jumbg: #f5f7fb;
+
+// dark
+$black: #484848;
+$lightBlack: #757575;
+
+/**
+@ font-sizes
+* -----------*/
+
+$xlg: 3.5rem;
+$lg: 3rem;
+$h1: 2.25rem;
+$h2: 2rem;
+$h3: 1.8rem;
+$h4: 1.55rem;
+$h5: 1.4rem;
+$h6: 1.25rem;
+$p: 1.1rem;
+$reg: 1rem;
+$small: 0.9rem;
+$xsmall: 0.7rem;
+
+/**
+@  box-shadows
+*  ––––––––––– */
+
+$reg-boxshadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+  0px 4px 5px 0px rgba(0, 0, 0, 0.14),
+  0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+$min-boxshadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+$min2-boxshadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+$boxshadow2: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+  0px 4px 5px 0px rgba(0, 0, 0, 0.14),
+  0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+$nav-boxshadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+  0px 4px 5px 0px rgba(0, 0, 0, 0.14),
+  0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+
+/**
+@  page-transitions
+*  ––––––––––– */
+
+.fade-appear,
+.fade-enter {
+  opacity: 1;
+  animation-delay: 0ms;
+  z-index: 20;
+}
+
+.fade-exit.fade-exit-active {
+  opacity: 0;
+  z-index: -10;
+  animation: fade-out 0.55s ease-in-out 0ms;
+}
+
+.fade-appear-active,
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  z-index: 10;
+  animation: fade-in 0.75s ease-in 0ms;
+}
+
+.fade-enter-done,
+.fade-exit {
+  opacity: 1;
+  z-index: 20;
+}
+
+/**
+@  key-frames fadeInOUt sideIn/Out
+*  –––––––––––--------------------- */
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes sideOut {
+  from {
+    opacity: 1;
+    right: 0px;
+  }
+  to {
+    opacity: 0;
+    right: -350px;
+  }
+}
+
+@keyframes sideIn {
+  from {
+    opacity: 0;
+    right: -350px;
+  }
+
+  to {
+    opacity: 1;
+    right: 0px;
+  }
+}
+
+@keyframes ripple {
+  0% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    width: 72px;
+    height: 72px;
+    opacity: 0;
+  }
+}

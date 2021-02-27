@@ -17,7 +17,16 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "./node_modules/.bin/eslint --fix .",
-    "cover": "npm run test -- --coverage --watchAll=false --colors"
+    "cover": "npm run test -- --coverage --watchAll=false --colors",
+    "standard": "npx standard --fix --verbose | snazzy"
+  },
+  "standard": {
+    "globals": [
+      "test",
+      "describe",
+      "expect",
+      "beforeEach"
+    ]
   },
   "eslintConfig": {
     "extends": [
@@ -44,6 +53,7 @@
     "jest-enzyme": "^7.1.2",
     "node-sass": "^4.14.1",
     "prettier": "^2.1.1",
-    "sass-loader": "^10.0.1"
+    "sass-loader": "^10.0.1",
+    "standard": "^16.0.3"
   }
 }
