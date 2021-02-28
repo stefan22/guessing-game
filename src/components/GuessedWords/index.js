@@ -49,9 +49,9 @@ GuessedWords.propTypes = {
     PropTypes.shape({
       guessedWord: PropTypes.string,
       letterMatchCount: PropTypes.number.isRequired,
-      succes: PropTypes.bool,
-    }),
-  ).isRequired,
+      succes: PropTypes.bool
+    })
+  ).isRequired
 }
 
 export default GuessedWords

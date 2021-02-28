@@ -43,7 +43,7 @@ const Header = props => {
 }
 
 Header.propTypes = {
-  success: PropTypes.bool,
+  success: PropTypes.bool
 }
 
 export default Header

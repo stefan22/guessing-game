@@ -1,4 +1,4 @@
-import { getLetterMatchingCount } from './testUtils'
+import { getLetterMatchingCount } from './'
 
 describe('Letter Matching Count', () => {
   let matches, guessedWord

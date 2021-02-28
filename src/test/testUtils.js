@@ -18,12 +18,12 @@ export const findDataTestAttr = (wrapper, val) => {
  */
 
 export const getLetterMatchingCount = (word, secretWord) => {
-  let wordSplit = word.split(''),
-    secretSplit = secretWord.split(''),
-    numMat = []
+  const wordSplit = word.split('')
+  const secretSplit = secretWord.split('')
+  const numMat = []
   secretSplit.map(letter => {
     return wordSplit.forEach(itm =>
-      !numMat.includes(itm) && itm === letter ? numMat.push(itm) : false,
+      !numMat.includes(itm) && itm === letter ? numMat.push(itm) : false
     )
   })
   return numMat.length

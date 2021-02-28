@@ -4,7 +4,7 @@ import Header from './'
 import { findDataTestAttr } from '../../test/testUtils'
 
 const defaultProps = {
-  guessedWords: [{ guessedWord: 'train', letterMatchCount: 3 }],
+  guessedWords: [{ guessedWord: 'train', letterMatchCount: 3 }]
 }
 
 /**
@@ -21,7 +21,7 @@ const setup = (props = {}) => {
 
 describe('if there are no words guessed', () => {
   let wrapper
-  let guessedWords = []
+  const guessedWords = []
   beforeEach(() => {
     wrapper = setup({ guessedWords })
   })
@@ -38,11 +38,11 @@ describe('if there are no words guessed', () => {
 })
 
 describe('if there are words guessed', () => {
-  let wrapper, guessedWords
-  guessedWords = [
+  let wrapper
+  const guessedWords = [
     { guessWord: 'jockey', letterMatchCount: 2, success: false },
     { guessWord: 'saint', letterMatchCount: 1, success: false },
-    { guessWord: 'party', letterMatchCount: 5, success: false },
+    { guessWord: 'party', letterMatchCount: 5, success: false }
   ]
   beforeEach(() => {
     wrapper = setup({ guessedWords })
@@ -57,7 +57,7 @@ describe('if there are words guessed', () => {
     wrapper = setup({
       guessWord: 'party',
       letterMatchCount: 5,
-      success: true,
+      success: true
     })
     const success = findDataTestAttr(wrapper, 'guessed-word-correctly')
     expect(success.text()).toBe('Congratulations! You guessed the word!')
