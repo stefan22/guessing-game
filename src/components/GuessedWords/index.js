@@ -1,31 +1,9 @@
 import React from 'react'
+import Header from '../Header'
 import './styles.scss'
 import PropTypes from 'prop-types'
 
 const GuessedWords = props => {
-  let instructions, success
-  if (props.guessedWords.length === 0) {
-    instructions = (
-      <span data-test='guessed-instructions'>
-        Try to guess the secret word!
-      </span>
-    )
-  } else if (props.guessedWords.length > 0) {
-    instructions = (
-      <span data-test='guessed-instructions'>
-        Nice ...you're on your way!
-      </span>
-    )
-  }
-
-  if (props.success) {
-    success = (
-      <span data-test='guessed-word-correctly'>
-        Congratulations! You guessed the word!
-      </span>
-    )
-  }
-
   const gwRows = props.guessedWords.map((wrd, idx) => (
     <tr className='gw-row' data-test='guessed-word' key={idx}>
       <td className='gw-single'>{wrd.guessedWord}</td>
@@ -33,20 +11,9 @@ const GuessedWords = props => {
     </tr>
   ))
 
-  //console.log(props)
   return (
     <div className='gw-wrapper'>
-      <header data-test='header'>
-        <div className={success ? 'gw-success show' : 'gw-success'}>
-          {success}
-        </div>
-
-        <div
-          className={success ? 'gw-instructions hide' : 'gw-instructions'}
-        >
-          {instructions}
-        </div>
-      </header>
+      <Header guessedWords={props.guessedWords} success={props.success} />
 
       <div className='gw-container' data-test='guessed-section'>
         <div className='gw-inner-container' data-test='guessed-words'>

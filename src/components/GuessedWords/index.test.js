@@ -1,6 +1,6 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import GuessedWords from './index'
+import GuessedWords from './'
 import { findDataTestAttr } from '../../test/testUtils'
 
 const defaultProps = {
@@ -35,16 +35,6 @@ describe('if there are no words guessed', () => {
     const comp = findDataTestAttr(wrapper, 'guessed-words')
     expect(comp.length).toBe(1)
   })
-
-  test('does render instructions to enter a word', () => {
-    const instructions = findDataTestAttr(wrapper, 'guessed-instructions')
-    expect(instructions.text().length).toBeGreaterThan(5)
-  })
-
-  test('render instruction to "Try to guess the secret word"', () => {
-    const instructions = findDataTestAttr(wrapper, 'guessed-instructions')
-    expect(instructions.text()).toEqual('Try to guess the secret word!')
-  })
 })
 
 describe('if there are words guessed', () => {
@@ -68,22 +58,8 @@ describe('if there are words guessed', () => {
     expect(guessedSection.length).toBe(1)
   })
 
-  test("renders new instructions after a word's entered", () => {
-    const instructions = findDataTestAttr(wrapper, 'guessed-instructions')
-    expect(instructions.text()).toEqual("Nice ...you're on your way!")
-  })
-
   test('renders number of correct guessed words matches', () => {
     const guessedCorrect = findDataTestAttr(wrapper, 'guessed-word')
     expect(guessedCorrect.length).toBe(guessedWords.length)
-  })
-  test('does render success message when word guessed correctly', () => {
-    wrapper = setup({
-      guessWord: 'party',
-      letterMatchCount: 5,
-      success: true,
-    })
-    const success = findDataTestAttr(wrapper, 'guessed-word-correctly')
-    expect(success.text()).toBe('Congratulations! You guessed the word!')
   })
 })

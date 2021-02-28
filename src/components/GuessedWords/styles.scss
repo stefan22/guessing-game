@@ -1,3 +1,5 @@
+@import '../../styles/base/vars';
+
 .gw-wrapper {
   display: flex;
   flex-direction: column;
@@ -6,75 +8,27 @@
   width: 100%;
   height: auto;
 }
-
-header {
-  width: 100%;
-  height: calc(12vh);
-  display: flex;
-  .gw-instructions {
-    width: 100%;
-    height: 67px;
-    span {
-      background-color: #414141;
-      color: #fafafa;
-      padding: 0 1rem;
-      font-size: 1.5rem;
-      margin: 1rem 0;
-      display: flex;
-      width: 100%;
-      justify-content: center;
-    }
-    &.hide {
-      display: none;
-    }
-  }
-  .gw-success {
-    width: 100%;
-    height: 67px;
-    display: none;
-    &.show {
-      display: block;
-    }
-    span {
-      background-color: #ff5722;
-      color: #faf8fb;
-      padding: 0 1rem;
-      font-size: 1.5rem;
-      margin: 1rem 0;
-      display: flex;
-      width: 100%;
-      justify-content: center;
-    }
-  }
-}
-
+// guessedWords container
 .gw-container {
   width: 100%;
   padding: 0 1rem;
-  height: calc(88vh);
+  height: calc(83.5vh);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  h1 {
-    display: flex;
-    position: relative;
-    font-size: 2.5rem;
-
-    width: 100%;
-    color: #6a1b9a;
-  }
+  // Guessed Words heading
   h2 {
     font-size: 2rem;
     text-align: left;
     width: 100%;
-    color: #6a1b9a;
+    color: $purple-dark;
     justify-content: flex-start;
   }
 }
 
 /*
-_____table______________*/
+_____Div Table_____________*/
 
 .gw-inner-container {
   display: flex;
@@ -82,7 +36,7 @@ _____table______________*/
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
-  margin: 1rem 0;
+  margin: 5rem 0;
   justify-content: center;
 }
 
@@ -91,8 +45,9 @@ _____table______________*/
   width: 100%;
   max-width: 700px;
   margin: 1rem 0;
-  border: 1px solid #8a6bc3;
+  border: 1px solid $purple-dark;
   border-radius: 2px;
+  box-shadow: $reg-boxshadow;
   .gw-table-row {
     display: table-row;
     height: 67px;
@@ -100,7 +55,7 @@ _____table______________*/
     .gw-table-head {
       display: table-cell;
       padding: 3px 10px;
-      border: 1px solid #b39ddb;
+      border: 1px solid $purple-dark;
     }
   }
 }
@@ -110,9 +65,9 @@ _____table______________*/
   height: 70px;
   font-size: 1.5rem;
   vertical-align: middle;
-  color: #565656;
+  color: $black;
   letter-spacing: 1px;
-  background-color: #d1c4e9;
+  background-color: $purple-light;
 }
 
 .gw-table-cell {
