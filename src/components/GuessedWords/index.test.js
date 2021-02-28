@@ -1,7 +1,7 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 import GuessedWords from './index'
-import { findDataTestAttr } from '../../../test/testUtils'
+import { findDataTestAttr } from '../../test/testUtils'
 
 const defaultProps = {
   guessedWords: [{ guessedWord: 'train', letterMatchCount: 3 }],
