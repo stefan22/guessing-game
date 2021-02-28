@@ -15,19 +15,20 @@ const defaultProps = {
  */
 
 const setup = (props = {}) => {
-  const setProps = { ...defaultProps, ...props }
-  return shallow(<GuessedWords {...setProps} />)
+  const setupProps = { ...defaultProps, ...props }
+  return shallow(<GuessedWords {...setupProps} />)
 }
 
 test('does not throw a warning with expected props', () => {
   const wrapper = setup()
-  expect(wrapper.find('.guessedWord')).toBeDefined()
+  expect(wrapper.find('guessedWords')).toBeDefined()
 })
 
 describe('if there are no words guessed', () => {
   let wrapper
+  let guessedWords = []
   beforeEach(() => {
-    wrapper = setup({ guessedWords: [] })
+    wrapper = setup({ guessedWords })
   })
 
   test('renders without errors', () => {

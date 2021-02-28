@@ -18,48 +18,46 @@ const GuessedWords = props => {
     )
   }
 
-  const gwNumRows = props.guessedWords.map((wrd, idx) => (
-    <tr data-test='guessed-word' key={idx}>
-      <td>{wrd.guessedWord}</td>
-      <td>{wrd.letterMatchCount}</td>
+  const gwRows = props.guessedWords.map((wrd, idx) => (
+    <tr className='gw-row' data-test='guessed-word' key={idx}>
+      <td className='gw-single'>{wrd.guessedWord}</td>
+      <td className='gw-single'>{wrd.letterMatchCount}</td>
     </tr>
   ))
 
-  //console.log(props.guessedWords)
-
   return (
-    <div className='wrapper'>
-      <heading>Heading</heading>
-      <div className='instructions'>{instructions}</div>
+    <div className='gw-wrapper'>
+      <header>
+        <heading>Heading</heading>
+        <div className='instructions'>{instructions}</div>
+      </header>
 
-      <div className='main-container' data-test='guessed-section'>
+      <div className='gw-container' data-test='guessed-section'>
         <div data-test='guessed-words'>
-          <h2>Guesses</h2>
+          <h2>Guessed Words</h2>
 
-          <table className='table table-sm'>
-            <thead className='thead-light'>
+          <table className='gw-table gw-table__show'>
+            <thead className='gw-heading'>
               <tr>
                 <th>Guess</th>
                 <th>Matching Letters</th>
               </tr>
             </thead>
-            <tbody>{gwNumRows}</tbody>
+            <tbody className='gw-body'>{gwRows}</tbody>
           </table>
-
-          <div className='gw-wrapper'>Guessed word</div>
         </div>
       </div>
     </div>
   )
 }
 
-// GuessedWords.propTypes = {
-//   guessedWords: PropTypes.arrayOf(
-//     PropTypes.shape({
-//       guessedWord: PropTypes.string.isRequired,
-//       letterMatchCount: PropTypes.number.isRequired,
-//     }),
-//   ).isRequired,
-// }
+GuessedWords.propTypes = {
+  guessedWords: PropTypes.arrayOf(
+    PropTypes.shape({
+      guessedWord: PropTypes.string,
+      letterMatchCount: PropTypes.number.isRequired,
+    }),
+  ).isRequired,
+}
 
 export default GuessedWords
