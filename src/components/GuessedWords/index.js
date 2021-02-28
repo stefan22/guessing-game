@@ -3,7 +3,7 @@ import './styles.scss'
 import PropTypes from 'prop-types'
 
 const GuessedWords = props => {
-  let instructions
+  let instructions, success
   if (props.guessedWords.length === 0) {
     instructions = (
       <span data-test='guessed-instructions'>
@@ -18,6 +18,14 @@ const GuessedWords = props => {
     )
   }
 
+  if (props.success) {
+    success = (
+      <span data-test='guessed-word-correctly'>
+        Congratulations! You guessed the word!
+      </span>
+    )
+  }
+
   const gwRows = props.guessedWords.map((wrd, idx) => (
     <tr className='gw-row' data-test='guessed-word' key={idx}>
       <td className='gw-single'>{wrd.guessedWord}</td>
@@ -25,26 +33,44 @@ const GuessedWords = props => {
     </tr>
   ))
 
+  //console.log(props)
   return (
     <div className='gw-wrapper'>
-      <header>
-        <heading>Heading</heading>
-        <div className='instructions'>{instructions}</div>
+      <header data-test='header'>
+        <div className={success ? 'gw-success show' : 'gw-success'}>
+          {success}
+        </div>
+
+        <div
+          className={success ? 'gw-instructions hide' : 'gw-instructions'}
+        >
+          {instructions}
+        </div>
       </header>
 
       <div className='gw-container' data-test='guessed-section'>
-        <div data-test='guessed-words'>
+        <div className='gw-inner-container' data-test='guessed-words'>
           <h2>Guessed Words</h2>
+          {gwRows}
+          <div className='gw-table'>
+            <div className='gw-table-row'>
+              <div className='gw-table-head'>
+                <strong>Word</strong>
+              </div>
+              <div className='gw-table-head'>
+                <strong>Matching letter</strong>
+              </div>
+            </div>
 
-          <table className='gw-table gw-table__show'>
-            <thead className='gw-heading'>
-              <tr>
-                <th>Guess</th>
-                <th>Matching Letters</th>
-              </tr>
-            </thead>
-            <tbody className='gw-body'>{gwRows}</tbody>
-          </table>
+            <div className='gw-table-row'>
+              <div className='gw-table-cell'>Train</div>
+              <div className='gw-table-cell'>a</div>
+            </div>
+            <div className='gw-table-row'>
+              <div className='gw-table-cell'>Lucky</div>
+              <div className='gw-table-cell'>no match</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -56,6 +82,7 @@ GuessedWords.propTypes = {
     PropTypes.shape({
       guessedWord: PropTypes.string,
       letterMatchCount: PropTypes.number.isRequired,
+      succes: PropTypes.bool,
     }),
   ).isRequired,
 }

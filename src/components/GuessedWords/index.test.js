@@ -50,9 +50,9 @@ describe('if there are no words guessed', () => {
 describe('if there are words guessed', () => {
   let wrapper, guessedWords
   guessedWords = [
-    { guessWord: 'jockey', letterMatchCount: 2 },
-    { guessWord: 'saint', letterMatchCount: 1 },
-    { guessWord: 'party', letterMatchCount: 5 },
+    { guessWord: 'jockey', letterMatchCount: 2, success: false },
+    { guessWord: 'saint', letterMatchCount: 1, success: false },
+    { guessWord: 'party', letterMatchCount: 5, success: false },
   ]
   beforeEach(() => {
     wrapper = setup({ guessedWords })
@@ -73,8 +73,17 @@ describe('if there are words guessed', () => {
     expect(instructions.text()).toEqual("Nice ...you're on your way!")
   })
 
-  test('renders number of correct guessed words', () => {
+  test('renders number of correct guessed words matches', () => {
     const guessedCorrect = findDataTestAttr(wrapper, 'guessed-word')
     expect(guessedCorrect.length).toBe(guessedWords.length)
+  })
+  test('does render success message when word guessed correctly', () => {
+    wrapper = setup({
+      guessWord: 'party',
+      letterMatchCount: 5,
+      success: true,
+    })
+    const success = findDataTestAttr(wrapper, 'guessed-word-correctly')
+    expect(success.text()).toBe('Congratulations! You guessed the word!')
   })
 })
