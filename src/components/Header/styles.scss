@@ -2,17 +2,27 @@
 
 header {
   width: 100%;
-  height: calc(16.25vh);
+  height: calc(23vh);
   display: flex;
   flex-direction: column;
+  .gw-stripe {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #7f0394;
+  }
   // h1 block
   h1 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 1rem 0;
+    margin: 3rem 0 2rem;
     padding: 0 1rem;
+    font-size: 3.5rem;
     align-items: center;
+    color: $purple-black;
     justify-content: center;
     width: 100%;
   }
@@ -23,12 +33,12 @@ header {
     span {
       background-color: $black;
       color: $white;
-      padding: 0.12rem 1rem;
-      font-size: 1.5rem;
-      margin: 1rem 0;
+      padding: 0.5rem 1rem;
+      font-size: 1.75rem;
       display: flex;
       width: 100%;
       justify-content: center;
+      box-shadow: $min-boxshadow;
     }
     &.hide {
       display: none;
@@ -45,9 +55,8 @@ header {
     span {
       background-color: $red;
       color: $jumbg;
-      padding: 0.12rem 1rem;
-      font-size: 1.5rem;
-      margin: 1rem 0;
+      padding: 0.5rem 1rem;
+      font-size: 1.75rem;
       display: flex;
       width: 100%;
       justify-content: center;

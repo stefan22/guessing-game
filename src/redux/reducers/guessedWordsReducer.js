@@ -1,15 +1,17 @@
 /**
- * WordsGuess Reducer
+ * GuessedWords Reducer
  * @param {array} state
  * @param {object} action
  * @returns {array}
  */
 
-const wordsGuessedReducer = (state = [], action) => {
+const initialState = {
+  guessedWords: []
+}
+
+export const guessedWordsReducer = (state = initialState, action) => {
   switch (action.type) {
     default:
       return state
   }
 }
-
-export default wordsGuessedReducer

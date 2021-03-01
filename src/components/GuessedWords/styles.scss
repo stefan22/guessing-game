@@ -12,7 +12,7 @@
 .gw-container {
   width: 100%;
   padding: 0 1rem;
-  height: calc(83.5vh);
+  height: calc(77vh);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -38,6 +38,9 @@ _____Div Table_____________*/
   width: 100%;
   margin: 5rem 0;
   justify-content: center;
+  &.hide {
+    display: none;
+  }
 }
 
 .gw-table {
@@ -64,16 +67,17 @@ _____Div Table_____________*/
   display: table-header-group;
   height: 70px;
   font-size: 1.5rem;
+  font-weight: 400;
   vertical-align: middle;
-  color: $black;
+  color: $white;
   letter-spacing: 1px;
-  background-color: $purple-light;
+  background-color: $purple-table;
 }
 
 .gw-table-cell {
   padding: 15px;
   font-size: 1.25rem;
   vertical-align: middle;
-  color: #4a148c;
+  color: $purple-black;
   cursor: pointer;
 }

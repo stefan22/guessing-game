@@ -1,6 +1,7 @@
-import React from 'react'
-import './styles.scss'
 import PropTypes from 'prop-types'
+import React from 'react'
+import GameRules from '../GameRules'
+import './styles.scss'
 
 const Header = props => {
   let instructions, success
@@ -28,6 +29,7 @@ const Header = props => {
 
   return (
     <header data-test='header'>
+      <div className='gw-stripe' />
       <h1>Word Guessing Game</h1>
       <div className={success ? 'gw-success show' : 'gw-success'}>
         {success}
@@ -38,6 +40,12 @@ const Header = props => {
       >
         {instructions}
       </div>
+
+      <GameRules
+        success={props.success}
+        gameRules={props.gameRules}
+        guessedWords={props.guessedWords}
+      />
     </header>
   )
 }

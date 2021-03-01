@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import App from './App'
 import { Provider } from 'react-redux'
-import store from './configStore'
+import store from './redux/store'
 import './styles/main.scss'
 
 ReactDOM.render(
@@ -10,5 +10,5 @@ ReactDOM.render(
     <App />
   </Provider>,
 
-  document.getElementById('root'),
+  document.getElementById('root')
 )
