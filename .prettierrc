@@ -9,5 +9,14 @@
   "arrowParens": "avoid",
   "singleAttributePerLine": false,
   "react/jsx-max-props-per-line": [1, "multiline"],
-  "renderWhiteSpace": "all"
+  "renderWhiteSpace": "all",
+  "overrides": [
+    {
+      "files": "*.test.js",
+      "options": {
+        "semi": false,
+        "singleQuote": true
+      }
+    }
+  ]
 }

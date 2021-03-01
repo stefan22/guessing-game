@@ -48,9 +48,9 @@ describe('if there are words guessed', () => {
     wrapper = setup({ guessedWords })
   })
 
-  test("renders new instructions after a word's entered", () => {
+  test('renders new instructions after a words entered', () => {
     const instructions = findDataTestAttr(wrapper, 'guessed-instructions')
-    expect(instructions.text()).toEqual("Nice ...you're on your way!")
+    expect(instructions.text()).toEqual('Nice ...you"re on your way!')
   })
 
   test('does render success message when word guessed correctly', () => {
