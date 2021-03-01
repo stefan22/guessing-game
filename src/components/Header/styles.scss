@@ -1,0 +1,56 @@
+@import '../../styles/base/vars';
+
+header {
+  width: 100%;
+  height: calc(16.25vh);
+  display: flex;
+  flex-direction: column;
+  // h1 block
+  h1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+    padding: 0 1rem;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  //instructions
+  .gw-instructions {
+    width: 100%;
+    height: 70px;
+    span {
+      background-color: $black;
+      color: $white;
+      padding: 0.12rem 1rem;
+      font-size: 1.5rem;
+      margin: 1rem 0;
+      display: flex;
+      width: 100%;
+      justify-content: center;
+    }
+    &.hide {
+      display: none;
+    }
+  }
+  // success
+  .gw-success {
+    width: 100%;
+    height: 70px;
+    display: none;
+    &.show {
+      display: block;
+    }
+    span {
+      background-color: $red;
+      color: $jumbg;
+      padding: 0.12rem 1rem;
+      font-size: 1.5rem;
+      margin: 1rem 0;
+      display: flex;
+      width: 100%;
+      justify-content: center;
+    }
+  }
+}

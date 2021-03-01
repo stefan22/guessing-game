@@ -1,8 +1,8 @@
-import React from "react";
-import App from "./App";
-import { shallow } from "enzyme";
+import React from 'react'
+import App from './App'
+import { shallow } from 'enzyme'
 
-test("renders learn react link", () => {
-  const wrapper = shallow(<App />);
-  expect(wrapper.length).toBe(1);
-});
+test('renders <App />', () => {
+  const wrapper = shallow(<App />)
+  expect(wrapper.length).toBe(1)
+})

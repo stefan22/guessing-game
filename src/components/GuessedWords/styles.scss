@@ -1,0 +1,79 @@
+@import '../../styles/base/vars';
+
+.gw-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+// guessedWords container
+.gw-container {
+  width: 100%;
+  padding: 0 1rem;
+  height: calc(83.5vh);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  // Guessed Words heading
+  h2 {
+    font-size: 2rem;
+    text-align: left;
+    width: 100%;
+    color: $purple-dark;
+    justify-content: flex-start;
+  }
+}
+
+/*
+_____Div Table_____________*/
+
+.gw-inner-container {
+  display: flex;
+  max-width: 700px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 5rem 0;
+  justify-content: center;
+}
+
+.gw-table {
+  display: table;
+  width: 100%;
+  max-width: 700px;
+  margin: 1rem 0;
+  border: 1px solid $purple-dark;
+  border-radius: 2px;
+  box-shadow: $reg-boxshadow;
+  .gw-table-row {
+    display: table-row;
+    height: 67px;
+    .gw-table-cell,
+    .gw-table-head {
+      display: table-cell;
+      padding: 3px 10px;
+      border: 1px solid $purple-dark;
+    }
+  }
+}
+
+.gw-table-head {
+  display: table-header-group;
+  height: 70px;
+  font-size: 1.5rem;
+  vertical-align: middle;
+  color: $black;
+  letter-spacing: 1px;
+  background-color: $purple-light;
+}
+
+.gw-table-cell {
+  padding: 15px;
+  font-size: 1.25rem;
+  vertical-align: middle;
+  color: #4a148c;
+  cursor: pointer;
+}
