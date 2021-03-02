@@ -7,6 +7,7 @@ form {
   justify-content: flex-start;
   width: 100%;
   flex-wrap: wrap;
+
   @media screen and (max-width: 850px) {
     width: 100%;
     display: flex;
@@ -31,6 +32,7 @@ form {
   width: 505px;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
   transition: width 0.4s ease-in-out;
+
   @media screen and (max-width: 850px) {
     width: 100%;
     padding: 10px 16px;
@@ -48,6 +50,7 @@ form {
   box-shadow: $min-boxshadow;
   border-radius: 4px;
   font-size: 1.35rem !important;
+
   @media screen and (max-width: 850px) {
     width: 100%;
     flex: 0 1 auto;
