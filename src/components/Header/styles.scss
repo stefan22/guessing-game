@@ -5,6 +5,7 @@ header {
   height: calc(23vh);
   display: flex;
   flex-direction: column;
+
   .gw-stripe {
     position: fixed;
     top: 0;
@@ -13,6 +14,7 @@ header {
     height: 5px;
     background-color: #7f0394;
   }
+
   // h1 block
   h1 {
     display: flex;
@@ -26,10 +28,12 @@ header {
     justify-content: center;
     width: 100%;
   }
+
   //instructions
   .gw-instructions {
     width: 100%;
     height: 70px;
+
     span {
       background-color: $black;
       color: $white;
@@ -40,18 +44,22 @@ header {
       justify-content: center;
       box-shadow: $min-boxshadow;
     }
+
     &.hide {
       display: none;
     }
   }
+
   // success
   .gw-success {
     width: 100%;
     height: 70px;
     display: none;
+
     &.show {
       display: block;
     }
+
     span {
       background-color: $red;
       color: $jumbg;

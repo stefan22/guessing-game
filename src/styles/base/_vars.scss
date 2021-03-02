@@ -1,14 +1,8 @@
-/**
-@  vars.scss
-¶  imported into each stylesheet
-¶  =============================
-*/
+/* _________ vars.scss _____________ */
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:wght@400;600;&display=swap');
 
-/**
-@ colors
-*  –––––– */
+/* _________ colors __________ */
 
 $red: #f44336;
 $blue: #062886;
@@ -26,9 +20,7 @@ $jumbg: #f5f7fb;
 $black: #484848;
 $light-black: #757575;
 
-/**
-@ font-sizes
-* -----------*/
+/* __________ font-sizes ______________ */
 
 $xlg: 3.5rem;
 $lg: 3rem;
@@ -43,9 +35,7 @@ $reg: 1rem;
 $small: 0.9rem;
 $xsmall: 0.7rem;
 
-/**
-@  box-shadows
-*  ––––––––––– */
+/* __________ box-shadows ____________________ */
 
 $reg-boxshadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
   0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
@@ -56,9 +46,7 @@ $boxshadow2: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
 $nav-boxshadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
   0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 
-/**
-@  page-transitions
-*  ––––––––––– */
+/* ____________ page-transitions___________________ */
 
 .fade-appear,
 .fade-enter {
@@ -86,9 +74,7 @@ $nav-boxshadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
   z-index: 20;
 }
 
-/**
-@  key-frames fadeInOUt sideIn/Out
-*  –––––––––––--------------------- */
+/* ___________ key-frames fadeInOUt sideIn/Out _____________ */
 
 @keyframes fade-out {
   from {

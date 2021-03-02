@@ -8,6 +8,7 @@
   width: 100%;
   height: auto;
 }
+
 // guessedWords container
 .gw-container {
   width: 100%;
@@ -17,6 +18,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+
   // Guessed Words heading
   h2 {
     font-size: 2rem;
@@ -27,8 +29,7 @@
   }
 }
 
-/*
-_____Div Table_____________*/
+/* _____ Div Table _____________ */
 
 .gw-inner-container {
   display: flex;
@@ -38,6 +39,7 @@ _____Div Table_____________*/
   width: 100%;
   margin: 5rem 0;
   justify-content: center;
+
   &.hide {
     display: none;
   }
@@ -51,33 +53,35 @@ _____Div Table_____________*/
   border: 1px solid $purple-dark;
   border-radius: 2px;
   box-shadow: $reg-boxshadow;
+
+  .gw-table-head {
+    display: table-header-group;
+    height: 70px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    vertical-align: middle;
+    color: $white;
+    letter-spacing: 1px;
+    background-color: $purple-table;
+  }
+
   .gw-table-row {
     display: table-row;
     height: 67px;
-    .gw-table-cell,
-    .gw-table-head {
+
+    .gw-table-cell {
+      padding: 15px;
+      font-size: 1.25rem;
+      vertical-align: middle;
+      color: $purple-black;
+      cursor: pointer;
+    }
+
+    .gw-table-head,
+    .gw-table-cell {
       display: table-cell;
       padding: 3px 10px;
       border: 1px solid $purple-dark;
     }
   }
-}
-
-.gw-table-head {
-  display: table-header-group;
-  height: 70px;
-  font-size: 1.5rem;
-  font-weight: 400;
-  vertical-align: middle;
-  color: $white;
-  letter-spacing: 1px;
-  background-color: $purple-table;
-}
-
-.gw-table-cell {
-  padding: 15px;
-  font-size: 1.25rem;
-  vertical-align: middle;
-  color: $purple-black;
-  cursor: pointer;
 }
