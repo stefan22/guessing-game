@@ -80,7 +80,6 @@ $nav-boxshadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
 }
 
 .fade-enter-done,
-
 .fade-exit {
   opacity: 1;
   z-index: 20;
@@ -91,7 +90,6 @@ $nav-boxshadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
 *  –––––––––––--------------------- */
 
 @keyframes fade-out {
-  
   from {
     opacity: 1;
   }
@@ -101,7 +99,6 @@ $nav-boxshadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
 }
 
 @keyframes fade-in {
-  
   from {
     opacity: 0;
   }
