@@ -51,7 +51,7 @@ $reg-boxshadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2),
 $min-boxshadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
 $min2-boxshadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 $boxshadow2: 0 2px 4px -1px rgba(0, 0, 0, 0.2),
-  0 4px 5px 0 rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+  0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0px rgba(0, 0, 0, 0.12);
 $nav-boxshadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2),
   0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 
@@ -93,7 +93,6 @@ $nav-boxshadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2),
   from {
     opacity: 1;
   }
-  
   to {
     opacity: 0;
   }
@@ -103,7 +102,6 @@ $nav-boxshadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2),
   from {
     opacity: 0;
   }
-  
   to {
     opacity: 1;
   }
@@ -114,7 +112,6 @@ $nav-boxshadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2),
     opacity: 1;
     right: 0;
   }
-  
   to {
     opacity: 0;
     right: -350px;
@@ -126,7 +123,6 @@ $nav-boxshadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2),
     opacity: 0;
     right: -350px;
   }
-  
   to {
     opacity: 1;
     right: 0;
@@ -141,7 +137,6 @@ $nav-boxshadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2),
     height: 0;
     opacity: 1;
   }
-  
   100% {
     top: 0;
     left: 0;
