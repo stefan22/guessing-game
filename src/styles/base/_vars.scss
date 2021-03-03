@@ -37,14 +37,14 @@ $xsmall: 0.7rem;
 
 /* __________ box-shadows ____________________ */
 
-$reg-boxshadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
-  0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+$reg-boxshadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2),
+  0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
 $min-boxshadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
 $min2-boxshadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-$boxshadow2: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
-  0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
-$nav-boxshadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
-  0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+$boxshadow2: 0 2px 4px -1px rgba(0, 0, 0, 0.2),
+  0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+$nav-boxshadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2),
+  0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 
 /* ____________ page-transitions___________________ */
 
@@ -97,7 +97,7 @@ $nav-boxshadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
 @keyframes sideOut {
   from {
     opacity: 1;
-    right: 0px;
+    right: 0;
   }
   to {
     opacity: 0;
@@ -113,7 +113,7 @@ $nav-boxshadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
 
   to {
     opacity: 1;
-    right: 0px;
+    right: 0;
   }
 }
 
@@ -126,8 +126,8 @@ $nav-boxshadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
     opacity: 1;
   }
   100% {
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     width: 72px;
     height: 72px;
     opacity: 0;
