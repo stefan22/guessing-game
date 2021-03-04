@@ -1,7 +1,7 @@
 {
   "extends": [
     "stylelint-config-standard",
-    "stylelint-config-sass-guidelines"
+
   ],
   "rules": {
     "rule-non-nested-empty-line-before": null,
