@@ -52,15 +52,36 @@ jobs:
         uses: github/super-linter@v3
         env:
           VALIDATE_ALL_CODEBASE: false
+          DEFAULT_BRANCH: master
           
-          # Do not lint files inside test folder: 
+        
+          # Linter path:
+          LINTER_RULES_PATH: /src
+          
+          # CSS local config file:
+          CSS_FILE_NAME: .stylelintrc.json
+          
+          # JS local config file
+          JAVASCRIPT_ES_CONFIG_FILE: .eslintrc.json
+          
+          # Validate files:
+          VALIDATE_CSS: true
+          VALIDATE_JAVASCRIPT_ES: true
+          
+          # Dont lint test folder: 
           FILTER_REGEX_EXCLUDE: .*test/.*
           
           # Validate Markdown
           VALIDATE_MARKDOWN: false
           
-          DEFAULT_BRANCH: master
+         
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          
+        
+        
+
+         
+         
 
 
 
