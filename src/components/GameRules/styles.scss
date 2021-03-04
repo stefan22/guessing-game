@@ -1,0 +1,31 @@
+@import '../../styles/base/vars';
+
+// rules
+.gw-rules {
+  display: flex;
+  flex-direction: column;
+  max-width: 700px;
+  padding: 1rem;
+  text-align: left;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 15rem auto 0;
+
+  @media screen and (max-width: 850px) {
+    margin: 0 auto 0;
+  }
+
+  p {
+    font-size: 1.25rem;
+    color: $black;
+    margin: 3rem 0;
+
+    @media screen and (max-width: 850px) {
+      font-size: 1.1rem;
+    }
+
+    span {
+      color: $red;
+    }
+  }
+}

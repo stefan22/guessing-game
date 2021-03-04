@@ -1,5 +1,6 @@
 import React from 'react'
 import Header from '../Header'
+import GuessedWordForm from '../GuessedWordForm'
 import './styles.scss'
 import PropTypes from 'prop-types'
 
@@ -14,30 +15,47 @@ const GuessedWords = props => {
   return (
     <div className='gw-wrapper'>
       <Header guessedWords={props.guessedWords} success={props.success} />
-
+      {gwRows}
       <div className='gw-container' data-test='guessed-section'>
-        <div className='gw-inner-container' data-test='guessed-words'>
-          <h2>Guessed Words</h2>
-          {gwRows}
-          <div className='gw-table'>
-            <div className='gw-table-row'>
-              <div className='gw-table-head'>
-                <strong>Word</strong>
-              </div>
-              <div className='gw-table-head'>
-                <strong>Matching letter</strong>
-              </div>
-            </div>
+        <div
+          className={
+            !props.gamesRules && !props.success
+              ? 'gw-inner-container'
+              : 'gw-inner-container hide'
+          }
+          data-test='guessed-words'
+        >
+          <GuessedWordForm />
 
-            <div className='gw-table-row'>
-              <div className='gw-table-cell'>Train</div>
-              <div className='gw-table-cell'>a</div>
+          <h2
+            className={
+              !props.success && !props.gameRules ? 'show' : 'hide'
+            }
+          >
+            Guessed Words
+          </h2>
+
+          {!props.successs && !props.gameRules && (
+            <div className='gw-table'>
+              <div className='gw-table-row'>
+                <div className='gw-table-head'>
+                  <strong>Word</strong>
+                </div>
+                <div className='gw-table-head'>
+                  <strong>Matching letter</strong>
+                </div>
+              </div>
+
+              <div className='gw-table-row'>
+                <div className='gw-table-cell'>Train</div>
+                <div className='gw-table-cell'>a</div>
+              </div>
+              <div className='gw-table-row'>
+                <div className='gw-table-cell'>Lucky</div>
+                <div className='gw-table-cell'>no match</div>
+              </div>
             </div>
-            <div className='gw-table-row'>
-              <div className='gw-table-cell'>Lucky</div>
-              <div className='gw-table-cell'>no match</div>
-            </div>
-          </div>
+          )}
         </div>
       </div>
     </div>

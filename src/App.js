@@ -5,7 +5,7 @@ class App extends Component {
   render () {
     return (
       <div className='App'>
-        <GuessedWords guessedWords={[]} success={false} />
+        <GuessedWords guessedWords={[]} success={false} gameRules />
       </div>
     )
   }
