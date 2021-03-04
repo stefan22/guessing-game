@@ -53,20 +53,7 @@ jobs:
         env:
           VALIDATE_ALL_CODEBASE: false
           DEFAULT_BRANCH: master
-          
-        
-          # Linter path:
-          LINTER_RULES_PATH: /
-          
-          # CSS local config file:
-          CSS_FILE_NAME: .stylelintrc.json
-          
-          # JS local config file
-          JAVASCRIPT_ES_CONFIG_FILE: .eslintrc.json
-          
-          # Validate files:
-          VALIDATE_CSS: true
-          VALIDATE_JAVASCRIPT_ES: true
+         
           
           # Dont lint test folder: 
           FILTER_REGEX_EXCLUDE: .*test/.*
@@ -76,6 +63,13 @@ jobs:
           
          
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          
+          
+          LINTER_RULES_PATH: /
+          CSS_FILE_NAME: .stylelintrc.json
+          JAVASCRIPT_ES_CONFIG_FILE: .eslintrc.json
+          VALIDATE_CSS: true
+          VALIDATE_JAVASCRIPT_ES: true
           
         
         
