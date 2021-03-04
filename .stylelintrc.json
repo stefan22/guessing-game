@@ -1,0 +1,10 @@
+{
+  "extends": "stylelint-config-standard",
+  "rules": {
+    "number-leading-zero": null,
+    "no-eol-whitespace": null,
+    "comment-empty-line-before": null,
+    "*-empty-line-after": null
+  },
+  "ignoreFiles": ["src/styles/base/_vars.scss"]
+}
