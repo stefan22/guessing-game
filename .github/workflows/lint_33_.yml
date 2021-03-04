@@ -56,7 +56,7 @@ jobs:
           
         
           # Linter path:
-          LINTER_RULES_PATH: /src
+          LINTER_RULES_PATH: /
           
           # CSS local config file:
           CSS_FILE_NAME: .stylelintrc.json
