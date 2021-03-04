@@ -1,3 +1,16 @@
- {
-  "extends": "stylelint-config-standard"
+{
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-sass-guidelines"
+  ],
+  "rules": {
+    "rule-non-nested-empty-line-before": null,
+    "at-rule-empty-line-before": [
+      "always",
+      {
+        "ignore": ["after-comment"]
+      }
+    ],
+    "comment-empty-line-before": null
+  }
 }
