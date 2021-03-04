@@ -1,4 +1,6 @@
-# Guessing-game &nbsp; :name_badge:
+# Guessing-game &nbsp; :name_badge: 
+
+[![Lint Code Base](https://github.com/stefan22/guessing-game/actions/workflows/lint_33_.yml/badge.svg)](https://github.com/stefan22/guessing-game/actions/workflows/lint_33_.yml)
 
 :baggage_claim: Tech stack: &nbsp; tdd - react -redux - html - css - sketch
 
