@@ -1,14 +1,19 @@
 import { combineReducers } from 'redux'
-import { messagesReducer } from './messagesReducer'
+import { secretWordReducer } from './secretWordReducer'
 import { successReducer } from './successReducer'
 import { guessedWordsReducer } from './guessedWordsReducer'
+import { gameRulesReducer } from './gameRulesReducer'
 
-const rootReducer = combineReducers(
-  messagesReducer,
+export default combineReducers({
+  rules: gameRulesReducer,
+  success: successReducer,
+  secret: secretWordReducer,
+  guessedWords: guessedWordsReducer,
+})
+
+export {
   successReducer,
-  guessedWordsReducer
-)
-
-export { successReducer, messagesReducer, guessedWordsReducer }
-
-export default rootReducer
+  gameRulesReducer,
+  guessedWordsReducer,
+  secretWordReducer,
+}

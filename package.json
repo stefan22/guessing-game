@@ -6,6 +6,9 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "axios": "^0.21.1",
+    "cheerio": "^1.0.0-rc.5",
+    "dotenv": "^8.2.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-redux": "^7.2.2",
@@ -24,6 +27,12 @@
   "eslintConfig": {
     "extends": [
       "react-app"
+    ]
+  },
+  "standard": {
+    "globals": [
+      "myVar1",
+      "myVar2"
     ]
   },
   "browserslist": {
@@ -47,6 +56,9 @@
     "prettier": "^2.1.1",
     "sass-loader": "^10.0.1",
     "snazzy": "^9.0.0",
-    "standard": "^16.0.3"
+    "standard": "^16.0.3",
+    "stylelint": "^13.11.0",
+    "stylelint-config-sass-guidelines": "^8.0.0",
+    "stylelint-config-standard": "^20.0.0"
   }
 }

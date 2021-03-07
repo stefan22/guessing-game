@@ -22,8 +22,10 @@ const GameRules = props => {
         </span>
         <br />
         <br />
-        P.S. Word positioning is for nerds <strong>(:«())</strong> and it's
-        not taken into account.
+        <span className='gw-ps'>
+          P.S. Word positioning is for nerds <strong>(:«())</strong> and
+          it's not taken into account.
+        </span>
       </p>
     </div>
   )
@@ -33,7 +35,7 @@ const GameRules = props => {
 
 GameRules.propTypes = {
   rules: PropTypes.string,
-  gameRules: PropTypes.bool
+  gameRules: PropTypes.bool,
 }
 
 export default GameRules

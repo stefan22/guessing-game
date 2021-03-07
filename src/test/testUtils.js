@@ -1,3 +1,6 @@
+import { createStore } from 'redux'
+import rootReducer from '../redux/store'
+
 /**
  * Returns component with data-attribute
  * @param {ShallowWrapper} Enzyme shallow wrapper
@@ -23,8 +26,18 @@ export const getLetterMatchingCount = (word, secretWord) => {
   const numMat = []
   secretSplit.map(letter => {
     return wordSplit.forEach(itm =>
-      !numMat.includes(itm) && itm === letter ? numMat.push(itm) : false
+      !numMat.includes(itm) && itm === letter ? numMat.push(itm) : false,
     )
   })
   return numMat.length
+}
+
+/**
+ * @function store factory
+ * @param {object} initial state
+ * @return {Store} redux store
+ */
+
+export const storeFactory = initialState => {
+  return createStore(rootReducer, initialState)
 }

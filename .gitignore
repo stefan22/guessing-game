@@ -170,3 +170,5 @@ xcuserdata/
 .vscode
 .prettierignore
 .eslintignore
+.env
+config.js

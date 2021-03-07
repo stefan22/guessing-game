@@ -1,20 +1,19 @@
-//import { actionTypes } from '../actions'
-
 export const actionTypes = {
-  GUESSED_SUCCESS: 'GUESSED_SUCCESS',
   GAME_RULES: 'GAME_RULES',
 }
 
 /**
- * Success Reducer
+ *  Messages Reducer
  * @param {array} state
  * @param {object} action
  * @returns {boolean}
  */
 
-export const successReducer = (state = false, action) => {
+export const gameRulesReducer = (state = false, action) => {
   switch (action.type) {
-    case actionTypes.GUESSED_SUCCESS:
+    case actionTypes.GAME_RULES:
+      let success = state.success
+      if (success) return false
       return true
 
     default:
