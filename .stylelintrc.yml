@@ -1,15 +1,13 @@
-{
-  "extends": "stylelint-config-standard",
-  "rules": {
-    "number-leading-zero": null,
-    "max-empty-lines": null,
-    "empty-lines": ["ignore"],
-    "rule-empty-line-before": null,
-    "no-eol-whitespace": ["ignore", "empty-lines"],
-    "comment-empty-line-before": null,
-    "*-empty-line-after": null,
-    "multiline-ternary": ["always-multiline"]
-  }
-
-
-}
+extends:
+  - stylelint-config-standard
+ignoreFiles:
+  - node_modules/**/*
+rules:
+   number-leading-zero: null,
+   max-empty-lines: null,
+   empty-lines: null,
+   rule-empty-line-before: null,
+   no-eol-whitespace: ["ignore", "empty-lines"],
+   comment-empty-line-before: null,
+   *-empty-line-after: null,
+   multiline-ternary: [true, "always-multiline"]
