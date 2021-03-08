@@ -24,6 +24,9 @@ rules:
      - disable
      - null
      
+    no-eol-whitespace: 
+      - false
+     
      
    no-eol-whitespace:
      - "ignore"
