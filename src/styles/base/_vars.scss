@@ -1,9 +1,7 @@
 /* _________ vars.scss _____________ */
-
 @import url('https://fonts.googleapis.com/css?family=Poppins:wght@400;600;&display=swap');
 
 /* _________ colors __________ */
-
 $red: #f44336;
 $blue: #062886;
 
@@ -21,7 +19,6 @@ $black: #484848;
 $light-black: #757575;
 
 /* __________ font-sizes ______________ */
-
 $xlg: 3.5rem;
 $lg: 3rem;
 $h1: 2.25rem;
@@ -36,7 +33,6 @@ $small: 0.9rem;
 $xsmall: 0.7rem;
 
 /* __________ box-shadows ____________________ */
-
 $reg-boxshadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
 $min-boxshadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
 $min2-boxshadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -48,10 +44,6 @@ $boxshadow2: 0 2px 4px -1px rgba(0, 0, 0, 0.2),
   0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
 $nav-boxshadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2),
   0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-
-
-/* ____________ page-transitions___________________ */
-
 
 .fade-appear,
 .fade-enter {
@@ -78,8 +70,6 @@ $nav-boxshadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2),
   opacity: 1;
   z-index: 20;
 }
-
-/* ____key-frames ____ */
 
 @keyframes fade-out {
   from {

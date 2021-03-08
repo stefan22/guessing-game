@@ -1,5 +1,4 @@
 @import '../../styles/base/vars';
-
 // rules
 .gw-rules {
   display: flex;
@@ -23,10 +22,10 @@
     @media screen and (max-width: 850px) {
       font-size: 1rem;
     }
-
     span {
       color: $red;
     }
+
     span.gw-ps {
       background: $jumbg;
       color: $purple-black;
