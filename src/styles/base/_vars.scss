@@ -46,8 +46,7 @@ $boxshadow2: 0 2px 4px -1px rgba(0, 0, 0, 0.2),
 $nav-boxshadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2),
   0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 
-
-/* ____________ page-transitions___________________ */
+/* page-transitions___________________ */
 
 .fade-appear,
 .fade-enter {
@@ -75,7 +74,7 @@ $nav-boxshadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2),
   z-index: 20;
 }
 
-/* ___________ key-frames fadeInOUt sideIn/Out _____________ */
+/* key-frames fadeInOUt sideIn/Out _____________ */
 
 @keyframes fade-out {
   from {
