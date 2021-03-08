@@ -1,5 +1,5 @@
-// import initStore from 'redux-test-belt'
-// import thunk from 'redux-thunk'
+import { createStore } from 'redux'
+import rootReducer from '../redux/reducers'
 
 /**
  * Returns component with data-attribute
@@ -32,11 +32,13 @@ export const getLetterMatchingCount = (word, secretWord) => {
   return numMat.length
 }
 
-/**
- * creates store with reducers, middleware and initial state
- * @function store factory
- * @param {object} initial state
- * @return {store} redux store
- */
 
-export const mockStore = () => {}
+
+/**
+ * store factory - as props
+ * @param {*} initialState 
+ * @returns redux store
+ */
+ export const storeFactory = (initialState) => {
+  return createStore(rootReducer, initialState)
+}

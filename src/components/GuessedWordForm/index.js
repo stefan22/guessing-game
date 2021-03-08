@@ -14,15 +14,15 @@ class GuessedWordForm extends Component {
 
   handleOnSubmit = event => {
     event.preventDefault()
-    const guessWord = this.state.currentGuess
-    if (guessWord && guessWord.length > 0) {
-      this.props.guessWord(guessWord)
+    const guess = this.state.currentGuess
+    if (guess && guess.length > 0) {
+      this.props.dispatch(guessWord())
       return this.setState({ currentGuess: '' })
     }
   }
 
   render () {
-    console.log(this)
+   
     const formContents = this.props.success
       ? null
       : (
