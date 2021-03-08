@@ -1,12 +1,76 @@
+---
+
 extends:
   - stylelint-config-standard
+  - stylelint-config-recommended-scss
 ignoreFiles:
   - node_modules/**/*
 rules:
-   number-leading-zero: null,
-   max-empty-lines: null,
-   empty-lines: null,
-   rule-empty-line-before: null,
-   no-eol-whitespace: ["ignore", "empty-lines"],
-   comment-empty-line-before: null,
-   multiline-ternary: [true, "always-multiline"]
+   number-leading-zero: 0,
+   max-empty-lines: 0,
+   empty-lines: 0,
+   rule-empty-line-before: 0,
+   no-eol-whitespace: 0,
+   comment-empty-line-before: 0,
+   ## Labels
+   no-unused-labels: 2
+   no-label-var: 2
+   ## Inheritance
+   no-constructor-return: 2
+   no-invalid-this: 2
+   ## To avoid
+   no-continue: 2
+   no-console: 2
+   no-alert: 2
+   node/no-process-exit: 2
+   ## standard/standard does not check arguments for unused-vars
+   no-unused-vars:
+     - 2
+     - {}
+   ## standard/standard does not check `typeof`
+   no-undef:
+     - 2
+     - typeof: true
+    
+   multiline-ternary:
+     - 2
+     - always-multiline
+  
+   key-spacing:
+     - 2
+     - beforeColon: false
+       afterColon: true
+   keyword-spacing:
+     - 2
+     - before: true
+       after: true      
+   
+   no-multiple-empty-lines:
+     - 0
+     
+   no-trailing-spaces: 0
+   no-whitespace-before-property: 0
+   object-curly-newline:
+     - 2
+     - multiline: true
+  
+   object-curly-spacing:
+     - 0
+   
+   object-property-newline:
+     - 2
+     - allowAllPropertiesOnSameLine: true
+  
+ 
+
+# overrides:
+  
+  
+
+      
+
+ 
+
+  
+  
+  
