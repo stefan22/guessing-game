@@ -9,5 +9,4 @@ rules:
    rule-empty-line-before: null,
    no-eol-whitespace: ["ignore", "empty-lines"],
    comment-empty-line-before: null,
-   *-empty-line-after: null,
    multiline-ternary: [true, "always-multiline"]
