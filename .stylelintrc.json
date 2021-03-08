@@ -9,7 +9,5 @@
     "*-empty-line-after": null,
     "multiline-ternary": ["always-multiline"]
   },
-
-
-  "ignoreFiles": ["src/styles/base/_vars.scss"]
+ }
 }
