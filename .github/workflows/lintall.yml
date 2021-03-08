@@ -45,7 +45,7 @@ jobs:
          
           
           # Dont lint test folder: 
-          FILTER_REGEX_EXCLUDE: .*test/.*
+         # FILTER_REGEX_EXCLUDE: .*test/.*
           
           # Validate Markdown
           VALIDATE_MARKDOWN: false
