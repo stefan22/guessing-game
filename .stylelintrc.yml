@@ -6,27 +6,62 @@ extends:
 ignoreFiles:
   - node_modules/**/*
 rules:
-   number-leading-zero: 0,
-   max-empty-lines: 0,
-   empty-lines: 0,
-   rule-empty-line-before: 0,
-   no-eol-whitespace: 0,
-   comment-empty-line-before: 0,
+
+   number-leading-zero: 
+     - 0
+     
+   max-empty-lines: 
+     - 0
+     
+   empty-lines: 
+     - 0
+     
+   rule-empty-line-before:
+     - 0
+     
+   no-eol-whitespace: 
+     - 0
+   
+   comment-empty-line-before: 
+     - 0
+     
+     
    ## Labels
-   no-unused-labels: 2
-   no-label-var: 2
+   no-unused-labels: 
+     - 2
+     
+   no-label-var: 
+     - 2
+     
+     
    ## Inheritance
-   no-constructor-return: 2
-   no-invalid-this: 2
+   no-constructor-return: 
+     - 2
+     
+   no-invalid-this: 
+     - 2
+     
+     
    ## To avoid
-   no-continue: 2
-   no-console: 2
+   
+   no-continue: 
+     - 2
+     
+   no-console: 
+     - 2
+     
    no-alert: 2
-   node/no-process-exit: 2
+   
+   node/no-process-exit: 
+     - 2
+   
+   
    ## standard/standard does not check arguments for unused-vars
    no-unused-vars:
      - 2
      - {}
+     
+     
    ## standard/standard does not check `typeof`
    no-undef:
      - 2
@@ -40,6 +75,7 @@ rules:
      - 2
      - beforeColon: false
        afterColon: true
+       
    keyword-spacing:
      - 2
      - before: true
@@ -48,8 +84,12 @@ rules:
    no-multiple-empty-lines:
      - 0
      
-   no-trailing-spaces: 0
-   no-whitespace-before-property: 0
+   no-trailing-spaces: 
+     - 0
+     
+   no-whitespace-before-property: 
+     - 0
+     
    object-curly-newline:
      - 2
      - multiline: true
