@@ -3,6 +3,7 @@
   "rules": {
     "number-leading-zero": null,
     "max-empty-lines": null,
+    "empty-lines": null,
     "rule-empty-line-before": null,
     "no-eol-whitespace": null,
     "comment-empty-line-before": null,
