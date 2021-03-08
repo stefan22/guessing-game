@@ -72,31 +72,31 @@ $nav-boxshadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2),
 }
 
 @keyframes fade-out {
+  
   from {
     opacity: 1;
   }
-  
   to {
     opacity: 0;
   }
 }
 
 @keyframes fade-in {
+  
   from {
     opacity: 0;
   }
-  
   to {
     opacity: 1;
   }
 }
 
 @keyframes sideOut {
+  
   from {
     opacity: 1;
     right: 0;
   }
-  
   to {
     opacity: 0;
     right: -350px;
@@ -104,11 +104,11 @@ $nav-boxshadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2),
 }
 
 @keyframes sideIn {
+  
   from {
     opacity: 0;
     right: -350px;
   }
-  
   to {
     opacity: 1;
     right: 0;
@@ -116,6 +116,7 @@ $nav-boxshadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2),
 }
 
 @keyframes ripple {
+  
   0% {
     top: 36px;
     left: 36px;
@@ -123,7 +124,6 @@ $nav-boxshadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2),
     height: 0;
     opacity: 1;
   }
-
   100% {
     top: 0;
     left: 0;
