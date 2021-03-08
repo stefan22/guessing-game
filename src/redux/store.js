@@ -4,19 +4,10 @@ import rootReducer from './reducers'
 
 export const middlewares = [ReduxThunk]
 
-const createStoreWithMiddleware = applyMiddleware(...middlewares)(
-  createStore
-)
+const createStoreWithMiddleware = applyMiddleware(...middlewares)(createStore)
 
-const getStore = () => {
-  const store = createStoreWithMiddleware(rootReducer)
-  store.subscribe(() => {
-    console.log(store.getState())
-    return store.getState()
-  })
-  return store
-}
+const store = createStoreWithMiddleware(rootReducer)
 
-const store = getStore()
+console.log(store.getState())
 
 export default store

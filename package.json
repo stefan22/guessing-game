@@ -31,7 +31,7 @@
   },
   "standard": {
     "parser": "babel-eslint",
-    "ignoreFiles": ["**/_vars.scss"],
+    "ignore": ["empty-lines"],
     "globals": [
       "describe",
       "beforeEach",

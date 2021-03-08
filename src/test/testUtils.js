@@ -1,5 +1,6 @@
-import { createStore } from 'redux'
 import rootReducer from '../redux/reducers'
+import { createStore, applyMiddleware } from 'redux'
+import { middlewares } from '../redux/store'
 
 /**
  * Returns component with data-attribute
@@ -32,13 +33,21 @@ export const getLetterMatchingCount = (word, secretWord) => {
   return numMat.length
 }
 
-
+/**
+ * store factory - as props
+ * @param {*} initialState
+ * @returns redux store
+ */
+export const storeFactory1 = (initialState) => {
+  return createStore(rootReducer, initialState)
+}
 
 /**
  * store factory - as props
- * @param {*} initialState 
+ * @param {*} initialState
  * @returns redux store
  */
- export const storeFactory = (initialState) => {
-  return createStore(rootReducer, initialState)
+export const storeFactory = (initialState) => {
+  const storeWithMiddleware = applyMiddleware(...middlewares)(createStore)
+  return storeWithMiddleware(rootReducer, initialState)
 }

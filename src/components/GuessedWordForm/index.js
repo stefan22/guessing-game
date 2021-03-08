@@ -22,7 +22,6 @@ class GuessedWordForm extends Component {
   }
 
   render () {
-   
     const formContents = this.props.success
       ? null
       : (
