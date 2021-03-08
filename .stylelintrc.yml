@@ -23,6 +23,11 @@ rules:
      - 0
      - disable
      - null
+     
+     
+   no-eol-whitespace:
+     - "ignore"
+     - "always-multiline"
    
    comment-empty-line-before: 
      - 0
