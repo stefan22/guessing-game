@@ -15,24 +15,12 @@ rules:
      
    empty-lines: 
      - 0
-     
-   rule-empty-line-before:
-     - 0
-     
-   no-eol-whitespace: 
-     - 0
-     - disable
-     - null
+   
      
     no-eol-whitespace: 
       - false
      
-     
-   no-eol-whitespace:
-     - "ignore"
-     - "always-multiline"
-     
-   no-eol-whitespace: ["ignore", "always-multiline"]
+    
    
    comment-empty-line-before: 
      - 0
