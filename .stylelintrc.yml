@@ -5,9 +5,7 @@
     "max-empty-lines": null,
     "empty-lines": ["ignore"],
     "rule-empty-line-before": null,
-    "no-eol-whitespace": {
-      "ignore": ["empty-lines"],
-     },
+    "no-eol-whitespace": ["ignore", "empty-lines"],
     "comment-empty-line-before": null,
     "*-empty-line-after": null,
     "multiline-ternary": ["always-multiline"]
