@@ -9,7 +9,7 @@ export const actionTypes = {
   GUESSED_WORD: 'GUESSED_WORD',
   GAME_RULES: 'GAME_RULES',
   ON_SUBMIT_GUESS: 'ON_SUBMIT_GUESS',
-  ON_CHANGE_GUESS: 'ON_CHANGE_GUESS',
+  ON_CHANGE_GUESS: 'ON_CHANGE_GUESS'
 }
 
 /**
@@ -27,7 +27,7 @@ export const guessWord = guessedWord => {
 
     dispatch({
       type: actionTypes.GUESSED_WORD,
-      payload: { guessedWord, matchingLetters },
+      payload: { guessedWord, matchingLetters }
     })
 
     if (guessedWord === secret) {
@@ -45,7 +45,7 @@ export const guessWord = guessedWord => {
 export const gameRules = () => {
   return dispatch => {
     dispatch({
-      type: actionTypes.GAME_RULES,
+      type: actionTypes.GAME_RULES
     })
   }
 }
@@ -63,7 +63,7 @@ export const getSecretWord = () => {
       const word = $('#output').text().trim()
       dispatch({
         type: actionTypes.SET_SECRET_WORD,
-        payload: word,
+        payload: word
       })
     })
   }

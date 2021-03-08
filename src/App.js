@@ -3,14 +3,14 @@ import { connect } from 'react-redux'
 import { getSecretWord, gameRules } from './redux/actions'
 import GuessedWords from './components/GuessedWords'
 
-class App extends Component {
-  componentDidMount() {
+class UnconnectedApp extends Component {
+  componentDidMount () {
     // getSecretWord
     this.props.getSecretWord()
     this.props.gameRules()
   }
 
-  render() {
+  render () {
     return (
       <div className='App'>
         <GuessedWords
@@ -30,8 +30,10 @@ const mapStateToProps = state => {
     success,
     rules,
     guessedWords,
-    secret,
+    secret
   }
 }
 
-export default connect(mapStateToProps, { getSecretWord, gameRules })(App)
+export default connect(mapStateToProps, { getSecretWord, gameRules })(
+  UnconnectedApp
+)

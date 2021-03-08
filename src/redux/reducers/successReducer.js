@@ -1,8 +1,8 @@
-//import { actionTypes } from '../actions'
+// import { actionTypes } from '../actions'
 
 export const actionTypes = {
   GUESSED_SUCCESS: 'GUESSED_SUCCESS',
-  GAME_RULES: 'GAME_RULES',
+  GAME_RULES: 'GAME_RULES'
 }
 
 /**

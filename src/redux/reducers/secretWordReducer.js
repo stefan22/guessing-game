@@ -1,7 +1,7 @@
-//import { actionTypes } from '../actions'
+// import { actionTypes } from '../actions'
 
 const actionTypes = {
-  SET_SECRET_WORD: 'SET_SECRET_WORD',
+  SET_SECRET_WORD: 'SET_SECRET_WORD'
 }
 
 /**

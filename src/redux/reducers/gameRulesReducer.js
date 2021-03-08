@@ -1,5 +1,5 @@
 export const actionTypes = {
-  GAME_RULES: 'GAME_RULES',
+  GAME_RULES: 'GAME_RULES'
 }
 
 /**
@@ -12,9 +12,7 @@ export const actionTypes = {
 export const gameRulesReducer = (state = false, action) => {
   switch (action.type) {
     case actionTypes.GAME_RULES:
-      let success = state.success
-      if (success) return false
-      return true
+      return !state
 
     default:
       return state

@@ -5,12 +5,10 @@ import { Provider } from 'react-redux'
 import store from './redux/store'
 import './styles/main.scss'
 
-console.log(store.getState())
-
 ReactDOM.render(
   <Provider store={store}>
     <App />
   </Provider>,
 
-  document.getElementById('root'),
+  document.getElementById('root')
 )

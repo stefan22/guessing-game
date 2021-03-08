@@ -8,12 +8,12 @@ export default combineReducers({
   rules: gameRulesReducer,
   success: successReducer,
   secret: secretWordReducer,
-  guessedWords: guessedWordsReducer,
+  guessedWords: guessedWordsReducer
 })
 
 export {
   successReducer,
   gameRulesReducer,
   guessedWordsReducer,
-  secretWordReducer,
+  secretWordReducer
 }

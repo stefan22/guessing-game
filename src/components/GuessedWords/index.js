@@ -5,8 +5,8 @@ import './styles.scss'
 import PropTypes from 'prop-types'
 
 const GuessedWords = props => {
-  let gwRows = props.guessedWords.guessedWords
-  if (!!gwRows) {
+  const gwRows = props.guessedWords.guessedWords
+  if (gwRows) {
     gwRows.map((wrd, idx) => (
       <tr className='gw-row' data-test='guessed-word' key={idx}>
         <td className='gw-single'>{wrd.guessedWord}</td>
@@ -28,7 +28,7 @@ const GuessedWords = props => {
         className={!props.success ? 'gw-container' : 'gw-container hide'}
         data-test='guessed-section'
       >
-        <div className={'gw-inner-container'} data-test='guessed-words'>
+        <div className='gw-inner-container' data-test='guessed-words'>
           <GuessedWordForm />
 
           <h2 className={!props.success && !props.rules ? 'show' : 'hide'}>
@@ -68,9 +68,9 @@ GuessedWords.propTypes = {
       guessedWord: PropTypes.string,
       letterMatchCount: PropTypes.number.isRequired,
       rules: PropTypes.bool,
-      succes: PropTypes.bool,
-    }),
-  ).isRequired,
+      succes: PropTypes.bool
+    })
+  ).isRequired
 }
 
 export default GuessedWords

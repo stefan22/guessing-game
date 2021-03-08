@@ -1,5 +1,5 @@
-import { createStore } from 'redux'
-import rootReducer from '../redux/store'
+// import initStore from 'redux-test-belt'
+// import thunk from 'redux-thunk'
 
 /**
  * Returns component with data-attribute
@@ -26,18 +26,17 @@ export const getLetterMatchingCount = (word, secretWord) => {
   const numMat = []
   secretSplit.map(letter => {
     return wordSplit.forEach(itm =>
-      !numMat.includes(itm) && itm === letter ? numMat.push(itm) : false,
+      !numMat.includes(itm) && itm === letter ? numMat.push(itm) : false
     )
   })
   return numMat.length
 }
 
 /**
+ * creates store with reducers, middleware and initial state
  * @function store factory
  * @param {object} initial state
- * @return {Store} redux store
+ * @return {store} redux store
  */
 
-export const storeFactory = initialState => {
-  return createStore(rootReducer, initialState)
-}
+export const mockStore = () => {}

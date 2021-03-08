@@ -1,7 +1,7 @@
-//import { actionTypes } from '../actions'
+// import { actionTypes } from '../actions'
 
 export const actionTypes = {
-  GUESSED_WORD: 'GUESSED_WORD',
+  GUESSED_WORD: 'GUESSED_WORD'
 }
 
 /**

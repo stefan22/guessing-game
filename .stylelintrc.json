@@ -4,7 +4,10 @@
     "number-leading-zero": null,
     "no-eol-whitespace": null,
     "comment-empty-line-before": null,
-    "*-empty-line-after": null
+    "*-empty-line-after": null,
+    "multiline-ternary": ["always-multiline"]
   },
+
+
   "ignoreFiles": ["src/styles/base/_vars.scss"]
 }

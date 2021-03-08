@@ -1,7 +1,7 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 import GuessedWordForm from './'
-import { findDataTestAttr, storeFactory } from '../../test/testUtils'
+import { findDataTestAttr } from '../../test/testUtils'
 
 describe('form component', () => {
   let wrapper

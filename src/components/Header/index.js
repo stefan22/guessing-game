@@ -4,20 +4,7 @@ import GameRules from '../GameRules'
 import './styles.scss'
 
 const Header = props => {
-  let instructions, isSuccess
-  if (!props.guessedWords) {
-    instructions = (
-      <span data-test='guessed-instructions'>
-        Try to guess the secret word!
-      </span>
-    )
-  } else if (props.guessedWords.length > 0) {
-    instructions = (
-      <span data-test='guessed-instructions'>
-        Nice ...you're on your way!
-      </span>
-    )
-  }
+  let isSuccess
 
   if (props.success) {
     isSuccess = (
@@ -39,12 +26,20 @@ const Header = props => {
         {isSuccess}
       </div>
 
-      <div
-        className={
-          props.success ? 'gw-instructions hide' : 'gw-instructions'
-        }
-      >
-        {instructions}
+      <div className='gw-instructions show'>
+        {
+          props.guessedWords && props.guessedWords.length <= 0
+            ? (
+              <span data-test='guessed-instructions'>
+                Try to guess the secret word!
+              </span>
+              )
+            : (
+              <span data-test='guessed-instructions'>
+                Nice ...you're on your way!
+              </span>
+              )
+}
       </div>
 
       <GameRules
@@ -57,7 +52,7 @@ const Header = props => {
 }
 
 Header.propTypes = {
-  success: PropTypes.bool,
+  success: PropTypes.bool
 }
 
 export default Header

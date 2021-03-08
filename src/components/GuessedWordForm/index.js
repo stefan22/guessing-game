@@ -5,10 +5,10 @@ import { guessWord } from '../../redux/actions'
 import './styles.scss'
 
 class GuessedWordForm extends Component {
-  constructor(props) {
+  constructor (props) {
     super(props)
     this.state = {
-      currentGuess: '',
+      currentGuess: ''
     }
   }
 
@@ -21,29 +21,30 @@ class GuessedWordForm extends Component {
     }
   }
 
-  render() {
+  render () {
     console.log(this)
-    let formContents = !!this.props.success ? null : (
-      <form data-test='gw-form'>
-        <input
-          data-test='gw-form-input'
-          className='gw-input'
-          onChange={event =>
-            this.setState({ currentGuess: event.target.value })
-          }
-          type='text'
-          name='word'
-        />
-        <input
-          data-test='gw-form-button'
-          className='gw-button'
-          type='submit'
-          onClick={e => this.handleOnSubmit(e)}
-          placeholder='Enter a word..'
-          value='Guess word'
-        />
-      </form>
-    )
+    const formContents = this.props.success
+      ? null
+      : (
+        <form data-test='gw-form'>
+          <input
+            data-test='gw-form-input'
+            className='gw-input'
+            onChange={event =>
+              this.setState({ currentGuess: event.target.value })}
+            type='text'
+            name='word'
+          />
+          <input
+            data-test='gw-form-button'
+            className='gw-button'
+            type='submit'
+            onClick={e => this.handleOnSubmit(e)}
+            placeholder='Enter a word..'
+            value='Guess word'
+          />
+        </form>
+        )
 
     return formContents
   }
@@ -55,7 +56,7 @@ const mapStateToProps = ({ success }) => {
 
 GuessedWordForm.propTypes = {
   handleOnSubmit: PropTypes.func,
-  handleOnChange: PropTypes.func,
+  handleOnChange: PropTypes.func
 }
 
 export default connect(mapStateToProps, { guessWord })(GuessedWordForm)

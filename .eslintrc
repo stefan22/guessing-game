@@ -1,0 +1,43 @@
+{
+  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "ecmaFeatures": {
+      "jsx": true,
+      "experimentalObjectRestSpread": true
+    }
+  },
+ 
+
+  "settings": {
+    "react": {
+      "pragma": "React"
+      
+    }
+  },
+  "extends": ["react-app", "plugin:jsx-a11y/recommended"],
+  "plugins": ["jsx-a11y"],
+
+  "rules": {
+    "jsx-quotes": ["error", "prefer-single"],
+    "react/jsx-boolean-value": "error",
+    "react/jsx-closing-bracket-location": ["error", "tag-aligned"],
+
+    "react/jsx-curly-newline": [
+      "error",
+      {
+        "multiline": "consistent",
+        "singleline": "consistent",
+        "react/no-deprecated": "error",
+        "react/no-direct-mutation-state": "error",
+        "react/self-closing-comp": "error",
+        "number-leading-zero": null,
+        "no-eol-whitespace": null,
+        "comment-empty-line-before": null,
+        "*-empty-line-after": null,
+        
+        "ignoreFiles": ["src/styles/base/_vars.scss"]
+      }
+    ]
+  }
+}

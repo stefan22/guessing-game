@@ -5,7 +5,7 @@ import rootReducer from './reducers'
 export const middlewares = [ReduxThunk]
 
 const createStoreWithMiddleware = applyMiddleware(...middlewares)(
-  createStore,
+  createStore
 )
 
 const getStore = () => {
@@ -18,7 +18,5 @@ const getStore = () => {
 }
 
 const store = getStore()
-
-console.log(store)
 
 export default store

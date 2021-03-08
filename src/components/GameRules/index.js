@@ -35,7 +35,7 @@ const GameRules = props => {
 
 GameRules.propTypes = {
   rules: PropTypes.string,
-  gameRules: PropTypes.bool,
+  gameRules: PropTypes.bool
 }
 
 export default GameRules
