@@ -8,13 +8,13 @@ ignoreFiles:
 rules:
 
    number-leading-zero: 
-     - 0
+     - false
      
    max-empty-lines: 
-     - 0
+     - false
      
    empty-lines: 
-     - 0
+     - false
    
      
     no-eol-whitespace: 
@@ -23,48 +23,49 @@ rules:
     
    
    comment-empty-line-before: 
-     - 0
+     - false
      
      
    ## Labels
    no-unused-labels: 
-     - 2
+     - false
      
    no-label-var: 
-     - 2
+     - false
      
      
    ## Inheritance
    no-constructor-return: 
-     - 2
+     - false
      
    no-invalid-this: 
-     - 2
+     - false
      
      
    ## To avoid
    
    no-continue: 
-     - 2
+     - false
      
    no-console: 
-     - 2
+     - false
      
-   no-alert: 2
+   no-alert: 
+     - false
    
    node/no-process-exit: 
-     - 2
+     - false
    
    
    ## standard/standard does not check arguments for unused-vars
    no-unused-vars:
-     - 2
+     - false
      - {}
      
      
    ## standard/standard does not check `typeof`
    no-undef:
-     - 2
+     - false
      - typeof: true
     
    multiline-ternary:
