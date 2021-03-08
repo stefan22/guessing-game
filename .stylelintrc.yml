@@ -28,6 +28,8 @@ rules:
    no-eol-whitespace:
      - "ignore"
      - "always-multiline"
+     
+   no-eol-whitespace: ["ignore", "always-multiline"]
    
    comment-empty-line-before: 
      - 0
