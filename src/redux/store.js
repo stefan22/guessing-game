@@ -1,34 +1,13 @@
-import {
-  createStore,
-  combineReducers,
-  applyMiddleware,
-  compose
-} from 'redux'
-import thunk from 'redux-thunk'
-import {
-  successReducer,
-  messagesReducer,
-  guessedWordsReducer
-} from './reducers'
+import { createStore, applyMiddleware } from 'redux'
+import ReduxThunk from 'redux-thunk'
+import rootReducer from './reducers'
 
-const initialState = {}
-const middlewares = [thunk]
+export const middlewares = [ReduxThunk]
 
-const rootReducer = combineReducers({
-  success: successReducer,
-  messages: messagesReducer,
-  guessedWords: guessedWordsReducer
-})
+const createStoreWithMiddleware = applyMiddleware(...middlewares)(createStore)
 
-const composeEnhancer =
-  typeof window === 'object' && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__
-    ? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__({})
-    : compose
-
-const enhancer = composeEnhancer(applyMiddleware(...middlewares))
-
-const store = createStore(rootReducer, initialState, enhancer)
-
-export default store
+const store = createStoreWithMiddleware(rootReducer)
 
 console.log(store.getState())
+
+export default store

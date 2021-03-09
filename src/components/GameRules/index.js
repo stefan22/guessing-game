@@ -22,8 +22,10 @@ const GameRules = props => {
         </span>
         <br />
         <br />
-        P.S. Word positioning is for nerds <strong>(:«())</strong> and it's
-        not taken into account.
+        <span className='gw-ps'>
+          P.S. Word positioning is for nerds <strong>(:«())</strong> and
+          it's not taken into account.
+        </span>
       </p>
     </div>
   )

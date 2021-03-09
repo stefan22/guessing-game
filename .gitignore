@@ -166,7 +166,11 @@ xcuserdata/
 
 .env.development.local
 .env.production.local
-
+.eslint
+.stylelintrc.json
 .vscode
 .prettierignore
 .eslintignore
+.env
+config.js
+/sample-style.yml
