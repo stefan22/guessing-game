@@ -14,7 +14,7 @@ rules:
   empty-lines: 
     - false
   no-eol-whitespace: 
-    - false
+    - [ true, { "ignore": "empty-lines"} ]
   comment-empty-line-before: 
     - false
    
