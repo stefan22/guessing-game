@@ -173,3 +173,4 @@ xcuserdata/
 .eslintignore
 .env
 config.js
+/sample-style.yml
