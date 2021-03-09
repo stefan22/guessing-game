@@ -1,15 +1,48 @@
-{
-  "extends": "stylelint-config-standard",
-  "rules": {
-    "number-leading-zero": null,
-    "max-empty-lines": null,
-    "empty-lines": null,
-    "rule-empty-line-before": null,
-    "no-eol-whitespace": null,
-    "comment-empty-line-before": null,
-    "*-empty-line-after": null,
-    "multiline-ternary": ["always-multiline"]
-  }
+---
 
+extends:
+  - stylelint-config-standard
+  - stylelint-config-recommended-scss
+ignoreFiles:
+  - node_modules/**/*
+  
+rules:
+  number-leading-zero: 
+    - false
+  max-empty-lines: 
+    - false
+  empty-lines: 
+    - false
+  no-eol-whitespace: 
+    - false
+  comment-empty-line-before: 
+    - false
+   
+  ## Labels
+  no-unused-labels: 
+    - false
+  no-label-var: 
+    - false
+  multiline-ternary:
+    - 2
+    - always-multiline
+  no-multiple-empty-lines:
+    - 0 
+  no-trailing-spaces: 
+    - 0 
+  no-whitespace-before-property: 
+    - 0
+     
+  
+ 
 
-}
+  
+  
+
+      
+
+ 
+
+  
+  
+  

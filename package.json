@@ -31,7 +31,6 @@
   },
   "standard": {
     "parser": "babel-eslint",
-    "ignore": ["empty-lines"],
     "globals": [
       "describe",
       "beforeEach",
