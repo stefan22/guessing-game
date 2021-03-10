@@ -1,5 +1,5 @@
 import { storeFactory } from './testUtils'
-import { guessWord, gameRules } from '../redux/actions'
+import { guessWord } from '../redux/actions'
 
 describe('`guessWord` action possible outcomes', () => {
   const secret = 'chain'
@@ -10,9 +10,7 @@ describe('`guessWord` action possible outcomes', () => {
     const initialState = {
       secret,
       rules: true,
-      guessedWords: [
-        { word: '', matches: 0 }
-      ]
+      guessedWords: [{ word: '', matches: 0 }]
     }
     beforeEach(() => {
       store = storeFactory(initialState)
