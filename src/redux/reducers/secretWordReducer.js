@@ -11,10 +11,13 @@ const actionTypes = {
  * @returns {string} -new state - secret word
  */
 
-export const secretWordReducer = (state = null, action) => {
+const initialState = ''
+
+export const secretWordReducer = (state = initialState, action) => {
   switch (action.type) {
     case actionTypes.SET_SECRET_WORD:
       return action.payload
+
     default:
       return state
   }

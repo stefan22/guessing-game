@@ -1,16 +1,7 @@
 import axios from 'axios'
 import cheerio from 'cheerio'
 import { getLetterMatchingCount } from '../../test/testUtils'
-
-export const actionTypes = {
-  GUESSED_SUCCESS: 'GUESSED_SUCCESS',
-  SET_SECRET_WORD: 'SET_SECRET_WORD',
-  GUESSED_WORDS: 'GUESSED_WORDS',
-  GUESSED_WORD: 'GUESSED_WORD',
-  GAME_RULES: 'GAME_RULES',
-  ON_SUBMIT_GUESS: 'ON_SUBMIT_GUESS',
-  ON_CHANGE_GUESS: 'ON_CHANGE_GUESS'
-}
+import actionTypes from '../types'
 
 /**
  * returns redux function that dispatches
@@ -19,19 +10,21 @@ export const actionTypes = {
  * @returns {function}
  */
 
-export const guessWord = guessedWord => {
+export const guessWord = word => {
   return function (dispatch, getState) {
-    const secret = getState().secretWord
-    console.log('is secret ', secret)
-    const matchingLetters = getLetterMatchingCount(guessedWord, secret)
+    const secret = getState().secret
+    const matches = getLetterMatchingCount(word, secret)
 
     dispatch({
       type: actionTypes.GUESSED_WORD,
-      payload: { guessedWord, matchingLetters }
+      payload: { word, matches }
     })
 
-    if (guessedWord === secret) {
-      dispatch({ type: actionTypes.GUESSED_SUCCESS })
+    if (word === secret) {
+      dispatch({
+        type: actionTypes.GUESSED_SUCCESS
+
+      })
     }
   }
 }
@@ -44,7 +37,7 @@ export const guessWord = guessedWord => {
  */
 export const gameRules = () => {
   return dispatch => {
-    dispatch({
+    return dispatch({
       type: actionTypes.GAME_RULES
     })
   }

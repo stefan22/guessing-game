@@ -1,13 +1,15 @@
 import { createStore, applyMiddleware } from 'redux'
-import ReduxThunk from 'redux-thunk'
+import thunk from 'redux-thunk'
 import rootReducer from './reducers'
 
-export const middlewares = [ReduxThunk]
+export const middlewares = [thunk]
 
-const createStoreWithMiddleware = applyMiddleware(...middlewares)(createStore)
+// const createStoreWithMiddleware = applyMiddleware(...middlewares)(createStore)
 
-const store = createStoreWithMiddleware(rootReducer)
+const store = createStore(rootReducer, applyMiddleware(thunk))
 
-console.log(store.getState())
+// const store = createStoreWithMiddleware(rootReducer)
+
+// console.log(window.store.getState())
 
 export default store
