@@ -6,7 +6,7 @@
     "rule-empty-line-before": null,
     "no-eol-whitespace": null,
     "comment-empty-line-before": null,
-    "*-empty-line-after": null,
+    "*-empty-line-after": null
   
   }
 }
