@@ -1,21 +1,16 @@
 import React from 'react'
 import Header from '../Header'
 import GuessedWordForm from '../GuessedWordForm'
+import { getLetterMatchingCount } from '../../test/testUtils'
 import './styles.scss'
-import PropTypes from 'prop-types'
+// import PropTypes from 'prop-types'
 
 const GuessedWords = props => {
-  const gwRows = props.guessedWords.guessedWords
-  if (gwRows) {
-    gwRows.map((wrd, idx) => (
-      <tr className='gw-row' data-test='guessed-word' key={idx}>
-        <td className='gw-single'>{wrd.guessedWord}</td>
-        <td className='gw-single'>{wrd.letterMatchCount}</td>
-      </tr>
-    ))
-  }
+  // let matches = getLetterMatchingCount(props.guessedWords[0], props.secret)
+  // console.log('word matching ', matches)
 
   return (
+
     <div className='gw-wrapper'>
       <Header
         rules={props.rules}
@@ -23,7 +18,7 @@ const GuessedWords = props => {
         guessedWords={props.guessedWords}
         success={props.success}
       />
-      {gwRows}
+
       <div
         className={!props.success ? 'gw-container' : 'gw-container hide'}
         data-test='guessed-section'
@@ -36,6 +31,7 @@ const GuessedWords = props => {
           </h2>
 
           {!props.successs && !props.rules && (
+
             <div className='gw-table'>
               <div className='gw-table-row'>
                 <div className='gw-table-head'>
@@ -45,15 +41,16 @@ const GuessedWords = props => {
                   <strong>Matching letter</strong>
                 </div>
               </div>
+              {props.guessedWords.map((itm, idx) =>
+                <div key={idx} className='gw-table-row'>
+                  <div className='gw-table-cell'>{itm.word || 'N/A'}</div>
+                  <div className='gw-table-cell'>
+                    {getLetterMatchingCount(itm, props.secret) || 'no match'}
+                  </div>
+                </div>
 
-              <div className='gw-table-row'>
-                <div className='gw-table-cell'>Train</div>
-                <div className='gw-table-cell'>a</div>
-              </div>
-              <div className='gw-table-row'>
-                <div className='gw-table-cell'>Lucky</div>
-                <div className='gw-table-cell'>no match</div>
-              </div>
+              )}
+
             </div>
           )}
         </div>
@@ -62,15 +59,15 @@ const GuessedWords = props => {
   )
 }
 
-GuessedWords.propTypes = {
-  guessedWords: PropTypes.arrayOf(
-    PropTypes.shape({
-      guessedWord: PropTypes.string,
-      letterMatchCount: PropTypes.number.isRequired,
-      rules: PropTypes.bool,
-      succes: PropTypes.bool
-    })
-  ).isRequired
-}
+// GuessedWords.propTypes = {
+//   guessedWords: PropTypes.arrayOf(
+//     PropTypes.shape({
+//       guessedWord: PropTypes.string,
+//       letterMatchCount: PropTypes.number.isRequired,
+//       rules: PropTypes.bool,
+//       succes: PropTypes.bool
+//     })
+//   ).isRequired
+// }
 
 export default GuessedWords
