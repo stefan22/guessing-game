@@ -21,9 +21,9 @@ export const findDataTestAttr = (wrapper, val) => {
  * @returns {number}
  */
 
-export const getLetterMatchingCount = (word, secretWord) => {
-  const wordSplit = word.split('')
-  const secretSplit = secretWord.split('')
+export const getLetterMatchingCount = (guess, secret) => {
+  const wordSplit = guess.word.split('')
+  const secretSplit = secret.split('')
   const numMat = []
   secretSplit.map(letter => {
     return wordSplit.forEach(itm =>

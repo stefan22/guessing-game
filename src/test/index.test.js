@@ -1,30 +1,30 @@
 import { getLetterMatchingCount } from './'
 
-describe('Letter Matching Count', () => {
+describe('Letter Matching Count fn', () => {
   let matches, guessedWord
-  const secretWord = 'party'
+  const secret = 'party'
 
   test('returns correct count when no matching letter', () => {
-    guessedWord = 'london'
-    matches = getLetterMatchingCount(guessedWord, secretWord)
+    guessedWord = { word: 'london' }
+    matches = getLetterMatchingCount(guessedWord, secret)
     expect(matches).toBe(0)
   })
 
   test('returns correct count when there are matching letters', () => {
-    guessedWord = 'candy'
-    matches = getLetterMatchingCount(guessedWord, secretWord)
+    guessedWord = { word: 'candy' }
+    matches = getLetterMatchingCount(guessedWord, secret)
     expect(matches).toBe(2)
   })
 
   test('returns correct count when there are duplicate letters', () => {
-    guessedWord = 'martha'
-    matches = getLetterMatchingCount(guessedWord, secretWord)
+    guessedWord = { word: 'martha' }
+    matches = getLetterMatchingCount(guessedWord, secret)
     expect(matches).toBe(3)
   })
 
   test('returns count equals 5 to indicate word guessed correctly', () => {
-    guessedWord = 'party'
-    matches = getLetterMatchingCount(guessedWord, secretWord)
+    guessedWord = { word: 'party' }
+    matches = getLetterMatchingCount(guessedWord, secret)
     expect(matches).toBe(5)
   })
 })
