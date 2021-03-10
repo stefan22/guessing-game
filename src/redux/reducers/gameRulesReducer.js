@@ -1,6 +1,4 @@
-export const actionTypes = {
-  GAME_RULES: 'GAME_RULES'
-}
+import actionTypes from '../types'
 
 /**
  *  Messages Reducer
@@ -9,10 +7,12 @@ export const actionTypes = {
  * @returns {boolean}
  */
 
-export const gameRulesReducer = (state = false, action) => {
+const initialState = { rules: true }
+
+export const gameRulesReducer = (state = initialState, action) => {
   switch (action.type) {
     case actionTypes.GAME_RULES:
-      return !state
+      return !state.rules
 
     default:
       return state

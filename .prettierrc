@@ -7,10 +7,10 @@
   "jsxSingleQuote": true,
   "trailingComma": "all",
   "arrowParens": "avoid",
-  "singleAttributePerLine": false,
-  "react/jsx-max-props-per-line": [1, "multiline"],
-  "multiline-ternary": ["always-multiline"],
-  "renderWhiteSpace": "all",
+  "singleAttributePerLine": true,
+  
+  
+  "renderWhiteSpace": "empty",
   "overrides": [
     {
       "files": "*.test.js",

@@ -12,7 +12,9 @@ export const actionTypes = {
  * @returns {boolean}
  */
 
-export const successReducer = (state = false, action) => {
+const initialState = false
+
+export const successReducer = (state = initialState, action) => {
   switch (action.type) {
     case actionTypes.GUESSED_SUCCESS:
       return true

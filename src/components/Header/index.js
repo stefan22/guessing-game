@@ -19,7 +19,8 @@ const Header = props => {
       <div className='gw-stripe' />
       <h1>Word Guessing Game</h1>
       <p>
-        succes: {props.success ? 'true' : 'false'} secret: {props.secret}{' '}
+        secret: {props.secret}{' | '} success: {props.success ? 'true' : 'false'}{' | '}
+        rules: {props.rules ? 'true' : 'false'}
       </p>
 
       <div className={props.success ? 'gw-success show' : 'gw-success'}>
@@ -27,26 +28,20 @@ const Header = props => {
       </div>
 
       <div className='gw-instructions show'>
-        {
-          props.guessedWords && props.guessedWords.length <= 0
-            ? (
-              <span data-test='guessed-instructions'>
-                Try to guess the secret word!
-              </span>
-              )
-            : (
-              <span data-test='guessed-instructions'>
-                Nice ...you're on your way!
-              </span>
-              )
-}
+        {props.guessedWords && props.guessedWords.length === 1 &&
+          props.rules === true &&
+           (
+             <span data-test='guessed-instructions'>
+               Try to guess the secret word!
+             </span>
+           )}
       </div>
 
       <GameRules
+        rules={props.rules}
         success={props.success}
-        gameRules={props.gameRules}
-        guessedWords={props.guessedWords}
       />
+
     </header>
   )
 }
