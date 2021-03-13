@@ -1,3 +1,5 @@
+/* _________ vars.scss _____________ */
+
 @import url('https://fonts.googleapis.com/css?family=Poppins:wght@400;600;&display=swap');
 
 /* _________ colors __________ */
@@ -35,11 +37,14 @@ $xsmall: 0.7rem;
 
 /* __________ box-shadows ____________________ */
 
-$reg-boxshadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+$reg-boxshadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2),
+  0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
 $min-boxshadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
 $min2-boxshadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-$boxshadow2: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
-$nav-boxshadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+$boxshadow2: 0 2px 4px -1px rgba(0, 0, 0, 0.2),
+  0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+$nav-boxshadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2),
+  0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 
 /* page-transitions___________________ */
 .fade-appear,
@@ -68,6 +73,7 @@ $nav-boxshadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.1
   z-index: 20;
 }
 
+/* key-frames fadeInOUt sideIn/Out _____________ */
 @keyframes fade-out {
   from {
     opacity: 1;

@@ -1,4 +1,5 @@
-# Guessing-game &nbsp; :name_badge:
+# Guessing-game &nbsp; :name_badge: 
+[![Lint Code Base](https://github.com/stefan22/guessing-game/actions/workflows/lintall.yml/badge.svg)](https://github.com/stefan22/guessing-game/actions/workflows/lintaLL.yml) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 :baggage_claim: Tech stack: &nbsp; tdd - react -redux - html - css - sketch
 
@@ -51,5 +52,13 @@ Tests found under `__tests__` folder
 <img src='screenshots/mck3.png'>
 
 <br /><br />
+
+
+## Todo
+
+- Get remaining tests passing
+- Wire up current app state
+
+
 
 The end &nbsp; :100:
