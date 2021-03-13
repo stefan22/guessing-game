@@ -53,4 +53,12 @@ Tests found under `__tests__` folder
 
 <br /><br />
 
+
+## Todo
+
+- Get remaining tests passing
+- Wire up current app state
+
+
+
 The end &nbsp; :100:
