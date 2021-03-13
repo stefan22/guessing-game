@@ -1,15 +1,19 @@
-import { createStore, applyMiddleware } from 'redux'
-import thunk from 'redux-thunk'
+import { applyMiddleware, compose, createStore } from 'redux'
+import thunkMiddleware from 'redux-thunk'
+
+import loggerMiddleware from './logger'
 import rootReducer from './reducers'
 
-export const middlewares = [thunk]
+export let middlewares = [thunkMiddleware]
 
-// const createStoreWithMiddleware = applyMiddleware(...middlewares)(createStore)
+export default function configureStore (preloadedState) {
+  middlewares = [loggerMiddleware, thunkMiddleware]
+  const middlewareEnhancer = applyMiddleware(...middlewares)
 
-const store = createStore(rootReducer, applyMiddleware(thunk))
+  const enhancers = [middlewareEnhancer]
+  const composedEnhancers = compose(...enhancers)
 
-// const store = createStoreWithMiddleware(rootReducer)
+  const store = createStore(rootReducer, preloadedState, composedEnhancers)
 
-// console.log(window.store.getState())
-
-export default store
+  return store
+}

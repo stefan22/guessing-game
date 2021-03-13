@@ -1,8 +1,4 @@
-// import { actionTypes } from '../actions'
-
-const actionTypes = {
-  SET_SECRET_WORD: 'SET_SECRET_WORD'
-}
+import actionTypes from '../types'
 
 /**
  * @function secretWordReducer
