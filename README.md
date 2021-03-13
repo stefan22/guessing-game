@@ -17,7 +17,7 @@ Fetching word GET/req <repo>`[game-server-repo] http://localhost:[process.env.PO
 
 ## Tests &nbsp; :traffic_light:
 
-Tests found under `__tests__` folder
+Tests found under /src (**/*.test.js)
 
 ## Instructions &nbsp; :pill:
 
