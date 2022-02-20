@@ -7,13 +7,12 @@
 
 ## About
 
-A short game where a user tries to guess a random generated five letter word
-by the computer.  
-At load, it shows the game instructions and asks user to guess word.  
-Once user submits a word (at least 3 characters long), a table appears
-below the text input box section showing the number of matching letters against
-the computer's word or a message indicating that you have guessed it correctly.  
-Fetching word GET/req <repo>`[game-server-repo] http://localhost:[process.env.PORT || 3000]/word`
+
+```js
+A word guesing game application with React/Redux. A user then makes several attempts at guessing this random generated word correclty.
+Repository: [game-server-repo] used to serve the random word.
+```
+
 
 ## Tests &nbsp; :traffic_light:
 
